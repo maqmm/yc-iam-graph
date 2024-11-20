@@ -1,0 +1,179 @@
+{
+  "main": {
+    "id": "3dc13113ab872e41",
+    "type": "split",
+    "children": [
+      {
+        "id": "c53221a41abb2aa0",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "c06c1f67e02430a1",
+            "type": "leaf",
+            "state": {
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Graph view"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "vertical"
+  },
+  "left": {
+    "id": "e47dedb727fc48ab",
+    "type": "split",
+    "children": [
+      {
+        "id": "512c10db4f3933be",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "7d67b650e7096de4",
+            "type": "leaf",
+            "state": {
+              "type": "file-explorer",
+              "state": {
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-folder-closed",
+              "title": "Files"
+            }
+          },
+          {
+            "id": "30cedfdc5effcd3f",
+            "type": "leaf",
+            "state": {
+              "type": "search",
+              "state": {
+                "query": "",
+                "matchingCase": false,
+                "explainSearch": false,
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical"
+              },
+              "icon": "lucide-search",
+              "title": "Search"
+            }
+          },
+          {
+            "id": "3f33e5dc865f187e",
+            "type": "leaf",
+            "state": {
+              "type": "bookmarks",
+              "state": {},
+              "icon": "lucide-bookmark",
+              "title": "Bookmarks"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300
+  },
+  "right": {
+    "id": "82c2f498329e8bd4",
+    "type": "split",
+    "children": [
+      {
+        "id": "359ec7dc62bf9a21",
+        "type": "tabs",
+        "children": [
+          {
+            "id": "1103e1b7978b9561",
+            "type": "leaf",
+            "state": {
+              "type": "backlink",
+              "state": {
+                "collapseAll": false,
+                "extraContext": false,
+                "sortOrder": "alphabetical",
+                "showSearch": false,
+                "searchQuery": "",
+                "backlinkCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-coming-in",
+              "title": "Backlinks"
+            }
+          },
+          {
+            "id": "f7d3f65ff39012cb",
+            "type": "leaf",
+            "state": {
+              "type": "outgoing-link",
+              "state": {
+                "linksCollapsed": false,
+                "unlinkedCollapsed": true
+              },
+              "icon": "links-going-out",
+              "title": "Outgoing links"
+            }
+          },
+          {
+            "id": "6ebc10276c2184fe",
+            "type": "leaf",
+            "state": {
+              "type": "tag",
+              "state": {
+                "sortOrder": "frequency",
+                "useHierarchy": true
+              },
+              "icon": "lucide-tags",
+              "title": "Tags"
+            }
+          },
+          {
+            "id": "e3b7702f409a9c44",
+            "type": "leaf",
+            "state": {
+              "type": "outline",
+              "state": {},
+              "icon": "lucide-list",
+              "title": "Outline"
+            }
+          }
+        ]
+      }
+    ],
+    "direction": "horizontal",
+    "width": 300,
+    "collapsed": true
+  },
+  "left-ribbon": {
+    "hiddenItems": {
+      "switcher:Open quick switcher": false,
+      "graph:Open graph view": false,
+      "canvas:Create new canvas": false,
+      "daily-notes:Open today's daily note": false,
+      "templates:Insert template": false,
+      "command-palette:Open command palette": false
+    }
+  },
+  "active": "c06c1f67e02430a1",
+  "lastOpenFiles": [
+    "_categories/ROLES.md",
+    "_roles/admin.md",
+    "_categories/speech-sense.md",
+    "_categories/speech-sense/speech-sense.data.md",
+    "_categories/quota-manager.md",
+    "_roles/quota-manager/quota-manager.requestOperator.md",
+    "_categories/access-transparency.md",
+    "_roles/vpc/vpc.privateAdmin.md",
+    "_roles/vdi/vdi.viewer.md",
+    "_categories/vpc.md",
+    "_categories/vpc/vpc.securityGroups.md",
+    "_roles/vpc/vpc.securityGroups/vpc.securityGroups.admin.md",
+    "_roles/vpc/vpc.bridgeAdmin.md",
+    "_categories/vdi.md",
+    "_roles/vdi/vdi.admin.md",
+    "_roles/vdi/vdi.editor.md",
+    "_categories/certificate-manager.md",
+    "_roles/certificate-manager/certificate-manager.viewer.md",
+    "_roles/certificate-manager/certificate-manager.editor.md"
+  ]
+}

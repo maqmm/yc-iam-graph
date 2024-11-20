@@ -1,0 +1,926 @@
+{
+  "collapse-filter": false,
+  "search": "",
+  "showTags": false,
+  "showAttachments": false,
+  "hideUnresolved": false,
+  "showOrphans": true,
+  "collapse-color-groups": true,
+  "colorGroups": [
+    {
+      "query": "path:_categories/access-transparency",
+      "color": {
+        "a": 1,
+        "rgb": 11403055
+      }
+    },
+    {
+      "query": "path:_roles/access-transparency",
+      "color": {
+        "a": 1,
+        "rgb": 11403055
+      }
+    },
+    {
+      "query": "path:_categories/ai",
+      "color": {
+        "a": 1,
+        "rgb": 13808780
+      }
+    },
+    {
+      "query": "path:_roles/ai",
+      "color": {
+        "a": 1,
+        "rgb": 13808780
+      }
+    },
+    {
+      "query": "path:_categories/alb",
+      "color": {
+        "a": 1,
+        "rgb": 2003199
+      }
+    },
+    {
+      "query": "path:_roles/alb",
+      "color": {
+        "a": 1,
+        "rgb": 2003199
+      }
+    },
+    {
+      "query": "path:_categories/api-gateway",
+      "color": {
+        "a": 1,
+        "rgb": 13458524
+      }
+    },
+    {
+      "query": "path:_roles/api-gateway",
+      "color": {
+        "a": 1,
+        "rgb": 13458524
+      }
+    },
+    {
+      "query": "path:_categories/audit-trails",
+      "color": {
+        "a": 1,
+        "rgb": 16416882
+      }
+    },
+    {
+      "query": "path:_roles/audit-trails",
+      "color": {
+        "a": 1,
+        "rgb": 16416882
+      }
+    },
+    {
+      "query": "path:_categories/backup",
+      "color": {
+        "a": 1,
+        "rgb": 65535
+      }
+    },
+    {
+      "query": "path:_roles/backup",
+      "color": {
+        "a": 1,
+        "rgb": 65535
+      }
+    },
+    {
+      "query": "path:_categories/billing",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "path:_roles/billing",
+      "color": {
+        "a": 1,
+        "rgb": 16711680
+      }
+    },
+    {
+      "query": "path:_categories/cdn",
+      "color": {
+        "a": 1,
+        "rgb": 8388352
+      }
+    },
+    {
+      "query": "path:_roles/cdn",
+      "color": {
+        "a": 1,
+        "rgb": 8388352
+      }
+    },
+    {
+      "query": "path:_categories/certificate-manager",
+      "color": {
+        "a": 1,
+        "rgb": 10145074
+      }
+    },
+    {
+      "query": "path:_roles/certificate-manager",
+      "color": {
+        "a": 1,
+        "rgb": 10145074
+      }
+    },
+    {
+      "query": "path:_categories/compute",
+      "color": {
+        "a": 1,
+        "rgb": 6266528
+      }
+    },
+    {
+      "query": "path:_roles/compute",
+      "color": {
+        "a": 1,
+        "rgb": 6266528
+      }
+    },
+    {
+      "query": "path:_categories/connection-manager",
+      "color": {
+        "a": 1,
+        "rgb": 9662683
+      }
+    },
+    {
+      "query": "path:_roles/connection-manager",
+      "color": {
+        "a": 1,
+        "rgb": 9662683
+      }
+    },
+    {
+      "query": "path:_categories/container-registry",
+      "color": {
+        "a": 1,
+        "rgb": 52945
+      }
+    },
+    {
+      "query": "path:_roles/container-registry",
+      "color": {
+        "a": 1,
+        "rgb": 52945
+      }
+    },
+    {
+      "query": "path:_categories/data-sphere",
+      "color": {
+        "a": 1,
+        "rgb": 9109504
+      }
+    },
+    {
+      "query": "path:_roles/data-sphere",
+      "color": {
+        "a": 1,
+        "rgb": 9109504
+      }
+    },
+    {
+      "query": "path:_categories/data-transfer",
+      "color": {
+        "a": 1,
+        "rgb": 32768
+      }
+    },
+    {
+      "query": "path:_roles/data-transfer",
+      "color": {
+        "a": 1,
+        "rgb": 32768
+      }
+    },
+    {
+      "query": "path:_categories/datalens",
+      "color": {
+        "a": 1,
+        "rgb": 3100495
+      }
+    },
+    {
+      "query": "path:_roles/datalens",
+      "color": {
+        "a": 1,
+        "rgb": 3100495
+      }
+    },
+    {
+      "query": "path:_categories/dataproc",
+      "color": {
+        "a": 1,
+        "rgb": 13789470
+      }
+    },
+    {
+      "query": "path:_roles/dataproc",
+      "color": {
+        "a": 1,
+        "rgb": 13789470
+      }
+    },
+    {
+      "query": "path:_categories/datasphere",
+      "color": {
+        "a": 1,
+        "rgb": 8421504
+      }
+    },
+    {
+      "query": "path:_roles/datasphere",
+      "color": {
+        "a": 1,
+        "rgb": 8421504
+      }
+    },
+    {
+      "query": "path:_categories/dns",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "path:_roles/dns",
+      "color": {
+        "a": 1,
+        "rgb": 16766720
+      }
+    },
+    {
+      "query": "path:_categories/dspm",
+      "color": {
+        "a": 1,
+        "rgb": 7833753
+      }
+    },
+    {
+      "query": "path:_roles/dspm",
+      "color": {
+        "a": 1,
+        "rgb": 7833753
+      }
+    },
+    {
+      "query": "path:_categories/functions",
+      "color": {
+        "a": 1,
+        "rgb": 2263842
+      }
+    },
+    {
+      "query": "path:_roles/functions",
+      "color": {
+        "a": 1,
+        "rgb": 2263842
+      }
+    },
+    {
+      "query": "path:_categories/gitlab",
+      "color": {
+        "a": 1,
+        "rgb": 10824234
+      }
+    },
+    {
+      "query": "path:_roles/gitlab",
+      "color": {
+        "a": 1,
+        "rgb": 10824234
+      }
+    },
+    {
+      "query": "path:_categories/iam",
+      "color": {
+        "a": 1,
+        "rgb": 5597999
+      }
+    },
+    {
+      "query": "path:_roles/iam",
+      "color": {
+        "a": 1,
+        "rgb": 5597999
+      }
+    },
+    {
+      "query": "path:_categories/iot",
+      "color": {
+        "a": 1,
+        "rgb": 11674146
+      }
+    },
+    {
+      "query": "path:_roles/iot",
+      "color": {
+        "a": 1,
+        "rgb": 11674146
+      }
+    },
+    {
+      "query": "path:_categories/k8s",
+      "color": {
+        "a": 1,
+        "rgb": 16716947
+      }
+    },
+    {
+      "query": "path:_roles/k8s",
+      "color": {
+        "a": 1,
+        "rgb": 16716947
+      }
+    },
+    {
+      "query": "path:_categories/kms",
+      "color": {
+        "a": 1,
+        "rgb": 9109504
+      }
+    },
+    {
+      "query": "path:_roles/kms",
+      "color": {
+        "a": 1,
+        "rgb": 9109504
+      }
+    },
+    {
+      "query": "path:_categories/license-manager",
+      "color": {
+        "a": 1,
+        "rgb": 12092939
+      }
+    },
+    {
+      "query": "path:_roles/license-manager",
+      "color": {
+        "a": 1,
+        "rgb": 12092939
+      }
+    },
+    {
+      "query": "path:_categories/load-balancer",
+      "color": {
+        "a": 1,
+        "rgb": 14423100
+      }
+    },
+    {
+      "query": "path:_roles/load-balancer",
+      "color": {
+        "a": 1,
+        "rgb": 14423100
+      }
+    },
+    {
+      "query": "path:_categories/loadtesting",
+      "color": {
+        "a": 1,
+        "rgb": 4251856
+      }
+    },
+    {
+      "query": "path:_roles/loadtesting",
+      "color": {
+        "a": 1,
+        "rgb": 4251856
+      }
+    },
+    {
+      "query": "path:_categories/lockbox",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    },
+    {
+      "query": "path:_roles/lockbox",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    },
+    {
+      "query": "path:_categories/logging",
+      "color": {
+        "a": 1,
+        "rgb": 10040012
+      }
+    },
+    {
+      "query": "path:_roles/logging",
+      "color": {
+        "a": 1,
+        "rgb": 10040012
+      }
+    },
+    {
+      "query": "path:_categories/managed-airflow",
+      "color": {
+        "a": 1,
+        "rgb": 16768685
+      }
+    },
+    {
+      "query": "path:_roles/managed-airflow",
+      "color": {
+        "a": 1,
+        "rgb": 16768685
+      }
+    },
+    {
+      "query": "path:_categories/managed-clickhouse",
+      "color": {
+        "a": 1,
+        "rgb": 11584734
+      }
+    },
+    {
+      "query": "path:_roles/managed-clickhouse",
+      "color": {
+        "a": 1,
+        "rgb": 11584734
+      }
+    },
+    {
+      "query": "path:_categories/managed-greenplum",
+      "color": {
+        "a": 1,
+        "rgb": 10824234
+      }
+    },
+    {
+      "query": "path:_roles/managed-greenplum",
+      "color": {
+        "a": 1,
+        "rgb": 10824234
+      }
+    },
+    {
+      "query": "path:_categories/managed-kafka",
+      "color": {
+        "a": 1,
+        "rgb": 16775388
+      }
+    },
+    {
+      "query": "path:_roles/managed-kafka",
+      "color": {
+        "a": 1,
+        "rgb": 16775388
+      }
+    },
+    {
+      "query": "path:_categories/managed-metastore",
+      "color": {
+        "a": 1,
+        "rgb": 16448210
+      }
+    },
+    {
+      "query": "path:_roles/managed-metastore",
+      "color": {
+        "a": 1,
+        "rgb": 16448210
+      }
+    },
+    {
+      "query": "path:_categories/managed-mongodb",
+      "color": {
+        "a": 1,
+        "rgb": 16753920
+      }
+    },
+    {
+      "query": "path:_roles/managed-mongodb",
+      "color": {
+        "a": 1,
+        "rgb": 16753920
+      }
+    },
+    {
+      "query": "path:_categories/managed-mysql",
+      "color": {
+        "a": 1,
+        "rgb": 14596231
+      }
+    },
+    {
+      "query": "path:_roles/managed-mysql",
+      "color": {
+        "a": 1,
+        "rgb": 14596231
+      }
+    },
+    {
+      "query": "path:_categories/managed-opensearch",
+      "color": {
+        "a": 1,
+        "rgb": 6266528
+      }
+    },
+    {
+      "query": "path:_roles/managed-opensearch",
+      "color": {
+        "a": 1,
+        "rgb": 6266528
+      }
+    },
+    {
+      "query": "path:_categories/managed-postgresql",
+      "color": {
+        "a": 1,
+        "rgb": 0
+      }
+    },
+    {
+      "query": "path:_roles/managed-postgresql",
+      "color": {
+        "a": 1,
+        "rgb": 0
+      }
+    },
+    {
+      "query": "path:_categories/managed-redis",
+      "color": {
+        "a": 1,
+        "rgb": 16770244
+      }
+    },
+    {
+      "query": "path:_roles/managed-redis",
+      "color": {
+        "a": 1,
+        "rgb": 16770244
+      }
+    },
+    {
+      "query": "path:_categories/managed-sqlserver",
+      "color": {
+        "a": 1,
+        "rgb": 3329330
+      }
+    },
+    {
+      "query": "path:_roles/managed-sqlserver",
+      "color": {
+        "a": 1,
+        "rgb": 3329330
+      }
+    },
+    {
+      "query": "path:_categories/marketplace",
+      "color": {
+        "a": 1,
+        "rgb": 8388608
+      }
+    },
+    {
+      "query": "path:_roles/marketplace",
+      "color": {
+        "a": 1,
+        "rgb": 8388608
+      }
+    },
+    {
+      "query": "path:_categories/mdb",
+      "color": {
+        "a": 1,
+        "rgb": 32896
+      }
+    },
+    {
+      "query": "path:_roles/mdb",
+      "color": {
+        "a": 1,
+        "rgb": 32896
+      }
+    },
+    {
+      "query": "path:_categories/monitoring",
+      "color": {
+        "a": 1,
+        "rgb": 15308410
+      }
+    },
+    {
+      "query": "path:_roles/monitoring",
+      "color": {
+        "a": 1,
+        "rgb": 15308410
+      }
+    },
+    {
+      "query": "path:_categories/organization-manager",
+      "color": {
+        "a": 1,
+        "rgb": 6908265
+      }
+    },
+    {
+      "query": "path:_roles/organization-manager",
+      "color": {
+        "a": 1,
+        "rgb": 6908265
+      }
+    },
+    {
+      "query": "path:_categories/postbox",
+      "color": {
+        "a": 1,
+        "rgb": 16744272
+      }
+    },
+    {
+      "query": "path:_roles/postbox",
+      "color": {
+        "a": 1,
+        "rgb": 16744272
+      }
+    },
+    {
+      "query": "path:_categories/quota-manager",
+      "color": {
+        "a": 1,
+        "rgb": 3050327
+      }
+    },
+    {
+      "query": "path:_roles/quota-manager",
+      "color": {
+        "a": 1,
+        "rgb": 3050327
+      }
+    },
+    {
+      "query": "path:_categories/resource-manager",
+      "color": {
+        "a": 1,
+        "rgb": 8388352
+      }
+    },
+    {
+      "query": "path:_roles/resource-manager",
+      "color": {
+        "a": 1,
+        "rgb": 8388352
+      }
+    },
+    {
+      "query": "path:_categories/search-api",
+      "color": {
+        "a": 1,
+        "rgb": 9055202
+      }
+    },
+    {
+      "query": "path:_roles/search-api",
+      "color": {
+        "a": 1,
+        "rgb": 9055202
+      }
+    },
+    {
+      "query": "path:_categories/serverless",
+      "color": {
+        "a": 1,
+        "rgb": 13047173
+      }
+    },
+    {
+      "query": "path:_roles/serverless",
+      "color": {
+        "a": 1,
+        "rgb": 13047173
+      }
+    },
+    {
+      "query": "path:_categories/serverless-containers",
+      "color": {
+        "a": 1,
+        "rgb": 12092939
+      }
+    },
+    {
+      "query": "path:_roles/serverless-containers",
+      "color": {
+        "a": 1,
+        "rgb": 12092939
+      }
+    },
+    {
+      "query": "path:_categories/smart-captcha",
+      "color": {
+        "a": 1,
+        "rgb": 8421376
+      }
+    },
+    {
+      "query": "path:_roles/smart-captcha",
+      "color": {
+        "a": 1,
+        "rgb": 8421376
+      }
+    },
+    {
+      "query": "path:_categories/smart-web-security",
+      "color": {
+        "a": 1,
+        "rgb": 65280
+      }
+    },
+    {
+      "query": "path:_roles/smart-web-security",
+      "color": {
+        "a": 1,
+        "rgb": 65280
+      }
+    },
+    {
+      "query": "path:_categories/speech-sense",
+      "color": {
+        "a": 1,
+        "rgb": 4915330
+      }
+    },
+    {
+      "query": "path:_roles/speech-sense",
+      "color": {
+        "a": 1,
+        "rgb": 4915330
+      }
+    },
+    {
+      "query": "path:_categories/storage",
+      "color": {
+        "a": 1,
+        "rgb": 16775920
+      }
+    },
+    {
+      "query": "path:_roles/storage",
+      "color": {
+        "a": 1,
+        "rgb": 16775920
+      }
+    },
+    {
+      "query": "path:_categories/vdi",
+      "color": {
+        "a": 1,
+        "rgb": 64154
+      }
+    },
+    {
+      "query": "path:_roles/vdi",
+      "color": {
+        "a": 1,
+        "rgb": 64154
+      }
+    },
+    {
+      "query": "path:_categories/video",
+      "color": {
+        "a": 1,
+        "rgb": 16776960
+      }
+    },
+    {
+      "query": "path:_roles/video",
+      "color": {
+        "a": 1,
+        "rgb": 16776960
+      }
+    },
+    {
+      "query": "path:_categories/vpc",
+      "color": {
+        "a": 1,
+        "rgb": 6591981
+      }
+    },
+    {
+      "query": "path:_roles/vpc",
+      "color": {
+        "a": 1,
+        "rgb": 6591981
+      }
+    },
+    {
+      "query": "path:_categories/websql",
+      "color": {
+        "a": 1,
+        "rgb": 8900346
+      }
+    },
+    {
+      "query": "path:_roles/websql",
+      "color": {
+        "a": 1,
+        "rgb": 8900346
+      }
+    },
+    {
+      "query": "path:_categories/wiki",
+      "color": {
+        "a": 1,
+        "rgb": 6737322
+      }
+    },
+    {
+      "query": "path:_roles/wiki",
+      "color": {
+        "a": 1,
+        "rgb": 6737322
+      }
+    },
+    {
+      "query": "path:_categories/ydb",
+      "color": {
+        "a": 1,
+        "rgb": 6591981
+      }
+    },
+    {
+      "query": "path:_roles/ydb",
+      "color": {
+        "a": 1,
+        "rgb": 6591981
+      }
+    },
+    {
+      "query": "path:_categories/yds",
+      "color": {
+        "a": 1,
+        "rgb": 25600
+      }
+    },
+    {
+      "query": "path:_roles/yds",
+      "color": {
+        "a": 1,
+        "rgb": 25600
+      }
+    },
+    {
+      "query": "path:_categories/ymq",
+      "color": {
+        "a": 1,
+        "rgb": 11674146
+      }
+    },
+    {
+      "query": "path:_roles/ymq",
+      "color": {
+        "a": 1,
+        "rgb": 11674146
+      }
+    },
+    {
+      "query": "path:_categories/yq",
+      "color": {
+        "a": 1,
+        "rgb": 2142890
+      }
+    },
+    {
+      "query": "path:_roles/yq",
+      "color": {
+        "a": 1,
+        "rgb": 2142890
+      }
+    },
+    {
+      "query": "file:ROLES",
+      "color": {
+        "a": 1,
+        "rgb": 16777215
+      }
+    }
+  ],
+  "collapse-display": true,
+  "showArrow": false,
+  "textFadeMultiplier": 0,
+  "nodeSizeMultiplier": 1,
+  "lineSizeMultiplier": 1,
+  "collapse-forces": false,
+  "centerStrength": 0.513020833333333,
+  "repelStrength": 14.9479166666667,
+  "linkStrength": 0.65625,
+  "linkDistance": 198,
+  "scale": 0.3121475384849869,
+  "close": false
+}

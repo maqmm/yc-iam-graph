@@ -1,0 +1,809 @@
+mindmap
+Справочник ролей Yandex Cloud
+  Примитивные роли("`Примитивные роли`")
+    Примитивные роли_desc["`Примитивные роли позволяют пользователям совершать действия во всех сервисах Yandex Cloud.`"]
+  Служебные роли
+    quota-manager_viewer("`quota-manager.viewer`")
+      quota-manager_viewer_desc["`Роль 'quota-manager.viewer' позволяет просматривать информацию о квотах сервисов Yandex Cloud и о запросах на увеличение таких квот, а также об облаках.`"]
+    quota-manager_requestOperator("`quota-manager.requestOperator`")
+      quota-manager_requestOperator_desc["`Роль 'quota-manager.requestOperator' позволяет создавать запросы на новые квоты для сервисов Yandex Cloud. Это разрешение также входит в роли 'admin' и 'editor'.`"]
+  Сервисы искусственного интеллекта
+    ai_auditor("`ai.auditor`")
+      ai_auditor_desc["`Роль 'ai.auditor' позволяет просматривать квоты для сервисов Yandex Translate, Yandex Vision, Yandex SpeechKit и Yandex Foundation Models, просматривать информацию об AI-ассистентах, а также читать метаинформацию каталогов.`"]
+    ai_viewer("`ai.viewer`")
+      ai_viewer_desc["`Роль 'ai.viewer' позволяет просматривать информацию о квотах сервисов Yandex Translate, Yandex Vision, Yandex SpeechKit и Yandex Foundation Models, об AI-ассистентах, а также о каталоге.`"]
+    ai_editor("`ai.editor`")
+      ai_editor_desc["`Роль 'ai.editor' позволяет использовать сервисы Yandex Translate, Yandex Vision, Yandex SpeechKit и Yandex Foundation Models.`"]
+    ai_admin("`ai.admin`")
+      ai_admin_desc["`Роль 'ai.admin'позволяет использовать сервисы Yandex Translate, Yandex Vision, Yandex SpeechKit и Yandex Foundation Models.`"]
+  Yandex API Gateway
+    api-gateway_auditor("`api-gateway.auditor`")
+      api-gateway_auditor_desc["`Роль 'api-gateway.auditor' позволяет просматривать список API-шлюзов и информацию о назначенных правах доступа к ним, а также метаинформацию каталога.`"]
+    api-gateway_viewer("`api-gateway.viewer`")
+      api-gateway_viewer_desc["`Роль 'api-gateway.viewer' позволяет просматривать список API-шлюзов, информацию о них и о назначенных правах доступа к ним, а также информацию о каталоге.`"]
+    api-gateway_editor("`api-gateway.editor`")
+      api-gateway_editor_desc["`Роль 'api-gateway.editor' позволяет просматривать информацию об API-шлюзах и управлять ими, а также работать с API WebSocket.`"]
+    api-gateway_websocketWriter("`api-gateway.websocketWriter`")
+      api-gateway_websocketWriter_desc["`Роль 'api-gateway.websocketWriter' позволяет работать с API WebSocket, а также просматривать список API-шлюзов, информацию о них и о назначенных правах доступа к ним.`"]
+    api-gateway_websocketBroadcaster("`api-gateway.websocketBroadcaster`")
+      api-gateway_websocketBroadcaster_desc["`Роль 'api-gateway.websocketBroadcaster' позволяет отправлять данные через соединения WebSocket, в том числе одновременно нескольким клиентам, а также просматривать список API-шлюзов, информацию о них и о назначенных правах доступа к ним.`"]
+    api-gateway_admin("`api-gateway.admin`")
+      api-gateway_admin_desc["`Роль 'api-gateway.admin' позволяет управлять API-шлюзами и доступом к ним, просматривать информацию об API-шлюзах, а также работать с API WebSocket.`"]
+  Yandex Application Load Balancer
+    alb_auditor("`alb.auditor`")
+      alb_auditor_desc["`Роль 'alb.auditor' позволяет просматривать информацию о ресурсах и квотах сервиса Application Load Balancer.`"]
+    alb_viewer("`alb.viewer`")
+      alb_viewer_desc["`Роль 'alb.viewer' позволяет просматривать список ресурсов Application Load Balancer и информацию о них и о квотах сервиса.`"]
+    alb_user("`alb.user`")
+      alb_user_desc["`Роль 'alb.user' позволяет использовать L7-балансировщики, HTTP-роутеры, группы бэкендов и целевые группы, а также просматривать информацию о ресурсах сервиса Application Load Balancer.`"]
+    alb_editor("`alb.editor`")
+      alb_editor_desc["`Роль 'alb.editor' позволяет управлять ресурсами сервиса Application Load Balancer и внутренними сетевыми балансировщиками нагрузки, а также просматривать информацию о них и об облачных сетях, подсетях, таблицах маршрутизации, шлюзах, группах безопасности и IP-адресах.`"]
+    alb_admin("`alb.admin`")
+      alb_admin_desc["`Роль 'alb.admin' позволяет управлять ресурсами сервиса Application Load Balancer и внутренними сетевыми балансировщиками нагрузки, а также просматривать информацию об облачных сетях, подсетях, таблицах маршрутизации, шлюзах, группах безопасности, IP-адресах и квотах.`"]
+  Yandex Audit Trails
+    audit-trails_auditor("`audit-trails.auditor`")
+      audit-trails_auditor_desc["`Роль 'audit-trails.auditor' позволяет просматривать список трейлов и информацию о них, а также об облаке, каталоге и квотах сервиса Audit Trails.`"]
+    audit-trails_viewer("`audit-trails.viewer`")
+      audit-trails_viewer_desc["`Роль 'audit-trails.viewer' позволяет читать аудитные логи, а также просматривать список трейлов и информацию о трейлах, облаке, каталоге и квотах сервиса Audit Trails.`"]
+    audit-trails_editor("`audit-trails.editor`")
+      audit-trails_editor_desc["`Роль 'audit-trails.editor' позволяет управлять трейлами и читать аудитные логи.`"]
+    audit-trails_admin("`audit-trails.admin`")
+      audit-trails_admin_desc["`Роль 'audit-trails.admin' позволяет управлять трейлами и доступом к ним, а также читать аудитные логи.`"]
+    audit-trails_configViewer("`audit-trails.configViewer`")
+      audit-trails_configViewer_desc["`Роль 'audit-trails.configViewer' позволяет просматривать список трейлов и информацию о них, а также об облаке, каталоге и квотах сервиса Audit Trails.`"]
+  Yandex Certificate Manager
+    certificate-manager_auditor("`certificate-manager.auditor`")
+      certificate-manager_auditor_desc["`Роль 'certificate-manager.auditor' позволяет просматривать информацию о сертификатах и доменах, а также о назначенных правах доступа к ним.`"]
+    certificate-manager_viewer("`certificate-manager.viewer`")
+      certificate-manager_viewer_desc["`Роль 'certificate-manager.viewer' позволяет просматривать информацию о сертификатах и доменах, а также о назначенных правах доступа к ним.`"]
+    certificate-manager_editor("`certificate-manager.editor`")
+      certificate-manager_editor_desc["`Роль 'certificate-manager.editor' позволяет управлять сертификатами и доменами, просматривать информацию о них, о назначенных правах доступа к ним и о квотах сервиса Certificate Manager.`"]
+    certificate-manager_admin("`certificate-manager.admin`")
+      certificate-manager_admin_desc["`Роль 'certificate-manager.admin' позволяет управлять сертификатами, доменами и доступом к ним, а также получать содержимое сертификатов.`"]
+    certificate-manager_certificates_downloader("`certificate-manager.certificates.downloader`")
+      certificate-manager_certificates_downloader_desc["`Роль 'certificate-manager.certificates.downloader' позволяет просматривать список сертификатов и информацию о них, а также получать содержимое сертификатов.`"]
+  Yandex Cloud Backup
+    backup_viewer("`backup.viewer`")
+      backup_viewer_desc["`Роль 'backup.viewer' позволяет просматривать информацию о виртуальных машинах, подключенных к сервису Cloud Backup, о политиках резервного копирования и резервных копиях, а также о квотах сервиса, облаке и каталоге.`"]
+    backup_editor("`backup.editor`")
+      backup_editor_desc["`Роль 'backup.editor' позволяет управлять подключением виртуальных машин к сервису Cloud Backup, управлять политиками резервного копирования, выполнять резервное копирование и восстанавливать ВМ из резервных копий.`"]
+    backup_admin("`backup.admin`")
+      backup_admin_desc["`Роль 'backup.admin' позволяет управлять политиками резервного копирования и доступом к ним, управлять подключением виртуальных машин к сервису Cloud Backup, выполнять резервное копирование и восстанавливать ВМ из резервных копий.`"]
+  Yandex Cloud Billing
+    billing_accounts_member("`billing.accounts.member`")
+      billing_accounts_member_desc["`Роль 'billing.accounts.member' автоматически выдается при добавлении пользователя в сервисе. Она необходима для показа выбранного платежного аккаунта в списке всех аккаунтов пользователя.`"]
+    billing_accounts_owner("`billing.accounts.owner`")
+      billing_accounts_owner_desc["`Роль 'billing.accounts.owner' автоматически выдается при создании платежного аккаунта. Роль, выданную при создании, нельзя отозвать, но можно выдать такую же роль другим пользователям и отозвать ее у них.`"]
+    billing_accounts_viewer("`billing.accounts.viewer`")
+      billing_accounts_viewer_desc["`Роль 'billing.accounts.viewer' назначается на платежный аккаунт. Позволяет просматривать данные платежного аккаунта, получать информацию о потреблении ресурсов, проверять расходы, выгружать акты сверки и отчетные документы.`"]
+    billing_accounts_accountant("`billing.accounts.accountant`")
+      billing_accounts_accountant_desc["`Роль 'billing.accounts.accountant' назначается на платежный аккаунт. Позволяет просматривать данные платежного аккаунта, получать информацию о потреблении ресурсов, проверять расходы, выгружать акты сверки и отчетные документы, создавать новый акт сверки, пополнять лицевой счет с помощью расчетного счета.`"]
+    billing_accounts_editor("`billing.accounts.editor`")
+      billing_accounts_editor_desc["`Роль 'billing.accounts.editor' назначается на платежный аккаунт. Позволяет получать счета на оплату, активировать промокоды, привязывать облака и сервисы к платежному аккаунту, создавать экспорт детализации, создавать бюджеты, генерировать акты сверки и резервировать ресурсы.`"]
+    billing_accounts_admin("`billing.accounts.admin`")
+      billing_accounts_admin_desc["`Роль 'billing.accounts.admin' назначается на платежный аккаунт и позволяет управлять доступами к платежному аккаунту (кроме роли 'billing.accounts.owner').`"]
+    billing_accounts_varWithoutDiscounts("`billing.accounts.varWithoutDiscounts`")
+      billing_accounts_varWithoutDiscounts_desc["`Роль 'billing.accounts.varWithoutDiscounts' назначается на платежный аккаунт. Предоставляет партнерским аккаунтам все права администратора, кроме возможности получать информацию о скидках.`"]
+    billing_partners_editor("`billing.partners.editor`")
+      billing_partners_editor_desc["`Роль 'billing.partners.editor' назначается на платежный аккаунт и дает право редактировать информацию о партнере и его продуктах в партнерском каталоге.`"]
+  Yandex Cloud CDN
+    cdn_viewer("`cdn.viewer`")
+      cdn_viewer_desc["`Роль 'cdn.viewer' позволяет просматривать информацию о каталоге, группах источников, CDN-ресурсах и квотах сервиса Cloud CDN.`"]
+    cdn_editor("`cdn.editor`")
+      cdn_editor_desc["`Роль 'cdn.editor' позволяет управлять ресурсами сервиса Cloud CDN, а также просматривать информацию о квотах сервиса и каталоге.`"]
+    cdn_admin("`cdn.admin`")
+      cdn_admin_desc["`Роль 'cdn.admin' позволяет управлять ресурсами сервиса Cloud CDN, а также просматривать информацию о квотах сервиса и каталоге.`"]
+  Yandex Cloud Desktop
+    vdi_viewer("`vdi.viewer`")
+      vdi_viewer_desc["`Роль 'vdi.viewer' позволяет использовать рабочие столы, а также просматривать информацию о рабочих столах и группах рабочих столов.`"]
+    vdi_editor("`vdi.editor`")
+      vdi_editor_desc["`Роль 'vdi.editor' позволяет управлять группами рабочих столов и рабочими столами, а также использовать рабочие столы.`"]
+    vdi_admin("`vdi.admin`")
+      vdi_admin_desc["`Роль 'vdi.admin' позволяет управлять группами рабочих столов и доступом к ним, а также управлять рабочими столами и использовать их.`"]
+  Yandex Cloud DNS
+    dns_auditor("`dns.auditor`")
+      dns_auditor_desc["`Роль 'dns.auditor' позволяет просматривать информацию о DNS-зонах и назначенных правах доступа к ним, а также о каталоге и квотах сервиса Cloud DNS. Роль не дает доступа к ресурсным записям.`"]
+    dns_viewer("`dns.viewer`")
+      dns_viewer_desc["`Роль 'dns.viewer' позволяет просматривать информацию о DNS-зонах и назначенных правах доступа к ним, о ресурсных записях, а также о каталоге и квотах сервиса Cloud DNS.`"]
+    dns_editor("`dns.editor`")
+      dns_editor_desc["`Роль 'dns.editor' позволяет управлять DNS-зонами и ресурсными записями, а также просматривать информацию о каталоге и квотах сервиса Cloud DNS.`"]
+    dns_admin("`dns.admin`")
+      dns_admin_desc["`Роль 'dns.admin' позволяет управлять DNS-зонами и доступом к ним, ресурсными записями, а также просматривать информацию о каталоге и квотах сервиса Cloud DNS.`"]
+  Yandex Cloud Functions
+    functions_auditor("`functions.auditor`")
+      functions_auditor_desc["`Роль 'functions.auditor' позволяет просматривать информацию о функциях, триггерах и подключениях к управляемым БД.`"]
+    functions_viewer("`functions.viewer`")
+      functions_viewer_desc["`Роль 'functions.viewer' позволяет просматривать информацию о функциях, в том числе код и переменные окружения версий функций, а также информацию о триггерах и подключениях к управляемым БД.`"]
+    functions_functionInvoker("`functions.functionInvoker`")
+      functions_functionInvoker_desc["`Роль 'functions.functionInvoker' позволяет вызывать функции.`"]
+    functions_editor("`functions.editor`")
+      functions_editor_desc["`Роль 'functions.editor' позволяет управлять функциями, триггерами, API-шлюзами и подключениями к управляемым БД.`"]
+    functions_mdbProxiesUser("`functions.mdbProxiesUser`")
+      functions_mdbProxiesUser_desc["`Роль 'functions.mdbProxiesUser' позволяет подключаться к управляемым БД из функций.`"]
+    functions_admin("`functions.admin`")
+      functions_admin_desc["`Роль 'functions.admin' позволяет управлять функциями, триггерами, API-шлюзами и подключениями к управляемым БД, а также доступом к ним.`"]
+    serverless_mdbProxies_user("`serverless.mdbProxies.user`")
+      serverless_mdbProxies_user_desc["`Роль 'serverless.mdbProxies.user' позволяет подключаться к управляемым БД из функций Cloud Functions.`"]
+    serverless_functions_invoker("`serverless.functions.invoker`")
+      serverless_functions_invoker_desc["`Роль 'serverless.functions.invoker' позволяет вызывать функции.`"]
+    serverless_functions_admin("`serverless.functions.admin`")
+      serverless_functions_admin_desc["`Роль 'serverless.functions.admin' позволяет управлять функциями, триггерами, API-шлюзами и подключениями к управляемым БД, а также доступом к ним.`"]
+  Yandex Cloud Logging
+    logging_viewer("`logging.viewer`")
+      logging_viewer_desc["`Роль 'logging.viewer' позволяет просматривать информацию о лог-группах, приемниках логов и назначенных правах доступа к ним, а также об облаке и каталоге.`"]
+    logging_editor("`logging.editor`")
+      logging_editor_desc["`Роль 'logging.editor' позволяет просматривать информацию о ресурсах сервиса и управлять ими.`"]
+    logging_reader("`logging.reader`")
+      logging_reader_desc["`Роль 'logging.reader' позволяет просматривать записи в лог-группах и информацию о ресурсах сервиса, а также метаинформацию облака и каталога.`"]
+    logging_writer("`logging.writer`")
+      logging_writer_desc["`Роль 'logging.writer' позволяет добавлять записи в лог-группы и просматривать информацию о ресурсах сервиса, а также об облаке и каталоге.`"]
+    logging_admin("`logging.admin`")
+      logging_admin_desc["`Роль 'logging.admin' позволяет управлять ресурсами сервиса и доступом к ним, а также просматривать и добавлять записи в лог-группы.`"]
+  Yandex Cloud Marketplace
+    Роли партнера
+      marketplace_meteringAgent("`marketplace.meteringAgent`")
+        marketplace_meteringAgent_desc["`Роль 'marketplace.meteringAgent' позволяет регистрировать потребление продуктов Marketplace.`"]
+      license-manager_saasSubscriptionSupervisor("`license-manager.saasSubscriptionSupervisor`")
+        license-manager_saasSubscriptionSupervisor_desc["`Роль 'license-manager.saasSubscriptionSupervisor' позволяет просматривать информацию о подписках и их привязках к ресурсам, приложениям или сервисам, а также создавать такие привязки.`"]
+      marketplace_product_creator("`marketplace.product.creator`")
+        marketplace_product_creator_desc["`Роль 'marketplace.product.creator' позволяет создавать продукты Marketplace в профиле партнера и управлять доступом к таким продуктам.`"]
+      marketplace_product_admin("`marketplace.product.admin`")
+        marketplace_product_admin_desc["`Роль 'marketplace.product.admin' позволяет управлять продуктами Marketplace и доступом к ним, а также их версиями, тарифами, пробными периодами, формами и заявками на модерацию.`"]
+      marketplace_publishers_reportViewer("`marketplace.publishers.reportViewer`")
+        marketplace_publishers_reportViewer_desc["`Роль 'marketplace.publishers.reportViewer' позволяет просматривать отчеты по продуктам Marketplace в профиле партнера.`"]
+      marketplace_publishers_viewer("`marketplace.publishers.viewer`")
+        marketplace_publishers_viewer_desc["`Роль 'marketplace.publishers.viewer' позволяет просматривать информацию о профиле партнера и продуктах Marketplace в нем, а также обращаться в техническую поддержку.`"]
+      marketplace_publishers_editor("`marketplace.publishers.editor`")
+        marketplace_publishers_editor_desc["`Роль 'marketplace.publishers.editor' позволяет управлять продуктами Marketplace и доступом к ним, их версиями, тарифами, пробными периодами, формами и заявками на модерацию, а также обращаться в техническую поддержку.`"]
+      marketplace_publishers_admin("`marketplace.publishers.admin`")
+        marketplace_publishers_admin_desc["`Роль 'marketplace.publishers.admin' позволяет управлять доступом к профилю партнера, управлять продуктами Marketplace и доступом к ним, их версиями, тарифами, пробными периодами, формами и заявками на модерацию, а также просматривать отчеты по продуктам Marketplace в профиле партнера.`"]
+      marketplace_publishers_owner("`marketplace.publishers.owner`")
+        marketplace_publishers_owner_desc["`Роль 'marketplace.publishers.owner' позволяет управлять доступом к профилю партнера, управлять продуктами Marketplace и доступом к ним, их версиями, тарифами, пробными периодами, формами и заявками на модерацию, а также просматривать отчеты по продуктам Marketplace в профиле партнера.`"]
+      marketplace_publishers_member("`marketplace.publishers.member`")
+        marketplace_publishers_member_desc["`Роль 'marketplace.publishers.member' предоставляет права участника профиля партнера, но не дает доступа к ресурсам профиля. Чтобы предоставить пользователю доступ к продуктам или отчетам в профиле партнера, дополнительно назначьте ему роль 'marketplace.publishers.viewer', 'marketplace.publishers.editor', 'marketplace.publishers.admin' или 'marketplace.publishers.owner'.`"]
+    Роли пользователя
+      license-manager_auditor("`license-manager.auditor`")
+        license-manager_auditor_desc["`Роль 'license-manager.auditor' позволяет просматривать информацию о подписках.`"]
+      license-manager_viewer("`license-manager.viewer`")
+        license-manager_viewer_desc["`Роль 'license-manager.viewer' позволяет просматривать информацию о подписках и их привязках к ресурсу, приложению или сервису.`"]
+      license-manager_user("`license-manager.user`")
+        license-manager_user_desc["`Роль 'license-manager.user' позволяет управлять подписками, а также просматривать информацию о них и их привязках к ресурсам, приложениям или сервисам.`"]
+      license-manager_subscriptionAgent("`license-manager.subscriptionAgent`")
+        license-manager_subscriptionAgent_desc["`Роль 'license-manager.subscriptionAgent' позволяет привязывать подписки к ресурсам, приложениям или сервисам, а также просматривать информацию о подписках и их привязках к ресурсам, приложениям или сервисам.`"]
+  Yandex Cloud Organization
+    organization-manager_viewer("`organization-manager.viewer`")
+      organization-manager_viewer_desc["`Роль 'organization-manager.viewer' позволяет просматривать информацию об организации, о входящих в нее пользователях и группах пользователей, а также о настройках OS Login.`"]
+    organization-manager_admin("`organization-manager.admin`")
+      organization-manager_admin_desc["`Роль 'organization-manager.admin' позволяет управлять настройками организации, пользователями организации и их группами, а также правами доступа пользователей к организации и ресурсам в ней.`"]
+    organization-manager_organizations_owner("`organization-manager.organizations.owner`")
+      organization-manager_organizations_owner_desc["`Роль 'organization-manager.organizations.owner' позволяет совершать любые действия с любыми ресурсами в организации и с платежными аккаунтами, в том числе создавать платежные аккаунты и привязывать их к облакам. Роль также позволяет назначать дополнительных владельцев организации.`"]
+    organization-manager_federations_viewer("`organization-manager.federations.viewer`")
+      organization-manager_federations_viewer_desc["`Роль 'organization-manager.federations.viewer' позволяет просматривать информацию об организации и ее настройках, информацию о федерациях удостоверений и сертификатах, а также списки сопоставлений групп пользователей и информацию о таких сопоставлениях.`"]
+    organization-manager_federations_userAdmin("`organization-manager.federations.userAdmin`")
+      organization-manager_federations_userAdmin_desc["`Роль 'organization-manager.federations.userAdmin' позволяет добавлять федеративных пользователей в организацию и удалять их, просматривать список пользователей организации, а также атрибуты федеративных пользователей.`"]
+    organization-manager_federations_admin("`organization-manager.federations.admin`")
+      organization-manager_federations_admin_desc["`Роль 'organization-manager.federations.admin' позволяет создавать, изменять и удалять федерации удостоверений, сертификаты и федеративных пользователей, просматривать настройки организации и информацию о сопоставлении групп пользователей.`"]
+    organization-manager_osLogins_viewer("`organization-manager.osLogins.viewer`")
+      organization-manager_osLogins_viewer_desc["`Роль 'organization-manager.osLogins.viewer' позволяет просматривать информацию о настройках OS Login организации и список профилей OS Login пользователей организации, а также просматривать список SSH-ключей пользователей организации и информацию об SSH-ключах.`"]
+    organization-manager_osLogins_admin("`organization-manager.osLogins.admin`")
+      organization-manager_osLogins_admin_desc["`Роль 'organization-manager.osLogins.admin' позволяет управлять настройками OS Login организации, а также профилями OS Login и SSH-ключами пользователей организации.`"]
+    organization-manager_groups_memberAdmin("`organization-manager.groups.memberAdmin`")
+      organization-manager_groups_memberAdmin_desc["`Роль 'organization-manager.groups.memberAdmin' позволяет просматривать информацию о группах пользователей, настраивать сопоставление групп пользователей, а также просматривать и изменять списки пользователей, входящих в группы.`"]
+    organization-manager_users_viewer("`organization-manager.users.viewer`")
+      organization-manager_users_viewer_desc["`Роль 'organization-manager.users.viewer' позволяет просматривать список пользователей организации и информацию о них, а также атрибуты федеративных пользователей.`"]
+  Yandex Cloud Postbox
+    postbox_sender("`postbox.sender`")
+      postbox_sender_desc["`Роль 'postbox.sender' позволяет отправлять письма из Yandex Cloud Postbox.`"]
+    postbox_auditor("`postbox.auditor`")
+      postbox_auditor_desc["`Роль 'postbox.auditor' позволяет просматривать информацию об адресах Yandex Cloud Postbox.`"]
+    postbox_viewer("`postbox.viewer`")
+      postbox_viewer_desc["`Роль 'postbox.viewer' позволяет просматривать информацию об адресах Yandex Cloud Postbox.`"]
+    postbox_editor("`postbox.editor`")
+      postbox_editor_desc["`Роль 'postbox.editor' позволяет управлять адресами Yandex Cloud Postbox и отправлять письма.`"]
+    postbox_admin("`postbox.admin`")
+      postbox_admin_desc["`Роль 'postbox.admin' позволяет управлять адресами Yandex Cloud Postbox и отправлять письма.`"]
+  Yandex Cloud Video
+    video_auditor("`video.auditor`")
+      video_auditor_desc["`Роль 'video.auditor' позволяет просматривать информацию о ресурсах сервиса Cloud Video и их параметрах.`"]
+    video_viewer("`video.viewer`")
+      video_viewer_desc["`Роль 'video.viewer' позволяет просматривать информацию о ресурсах сервиса Cloud Video и их параметрах.`"]
+    video_editor("`video.editor`")
+      video_editor_desc["`Роль 'video.editor' позволяет управлять ресурсами сервиса Cloud Video, а также выполнять трансляцию видеопотока.`"]
+    video_admin("`video.admin`")
+      video_admin_desc["`Роль 'video.admin' позволяет управлять ресурсами сервиса Cloud Video и доступом к ним.`"]
+  Yandex Compute Cloud
+    compute_auditor("`compute.auditor`")
+      compute_auditor_desc["`Роль 'compute.auditor' позволяет просматривать информацию о ресурсах сервиса Compute Cloud и операциях с ними, а также об объеме использованных ресурсов и квот. Не позволяет получать доступ к последовательному порту или серийной консоли виртуальных машин.`"]
+    compute_viewer("`compute.viewer`")
+      compute_viewer_desc["`Роль 'compute.viewer' позволяет просматривать информацию о ресурсах сервиса Compute Cloud и операциях с ними, а также о назначенных правах доступа к ресурсам сервиса и об объеме использованных ресурсов и квот. Роль также предоставляет доступ к метаданным и выводу последовательного порта виртуальных машин.`"]
+    compute_editor("`compute.editor`")
+      compute_editor_desc["`Роль 'compute.editor' позволяет управлять виртуальными машинами, группами виртуальных машин, дисками, образами, кластерами GPU и другими ресурсами сервиса Compute Cloud.`"]
+    compute_admin("`compute.admin`")
+      compute_admin_desc["`Роль 'compute.admin' позволяет управлять виртуальными машинами, группами виртуальных машин, дисками, образами, кластерами GPU и другими ресурсами сервиса Compute Cloud, а также доступом к ним.`"]
+    compute_osLogin("`compute.osLogin`")
+      compute_osLogin_desc["`Роль 'compute.osLogin' позволяет подключаться к виртуальным машинам через OS Login с помощью SSH-сертификатов или SSH-ключей.`"]
+    compute_osAdminLogin("`compute.osAdminLogin`")
+      compute_osAdminLogin_desc["`Роль 'compute.osAdminLogin' позволяет подключаться к виртуальным машинам при помощи SSH-сертификатов или SSH-ключей через OS Login с возможностью выполнять команды от имени суперпользователя ('sudo').`"]
+    compute_disks_user("`compute.disks.user`")
+      compute_disks_user_desc["`Роль 'compute.disks.user' позволяет просматривать список дисков и информацию о них, а также использовать диски для создания новых ресурсов, например виртуальных машин.`"]
+    compute_images_user("`compute.images.user`")
+      compute_images_user_desc["`Роль 'compute.images.user' позволяет просматривать список образов и информацию о них, получать информацию о наиболее актуальном образе в семействе образов, а также использовать образы для создания новых ресурсов, например виртуальных машин.`"]
+    compute_operator("`compute.operator`")
+      compute_operator_desc["`Роль 'compute.operator' позволяет запускать и останавливать виртуальные машины и группы виртуальных машин, а также просматривать информацию о ресурсах сервиса Compute Cloud и операциях с ними, а также о назначенных правах доступа к ресурсам сервиса и об объеме использованных ресурсов и квот.`"]
+    compute_snapshotSchedules_viewer("`compute.snapshotSchedules.viewer`")
+      compute_snapshotSchedules_viewer_desc["`Роль 'compute.snapshotSchedules.viewer' позволяет просматривать информацию о создании снимков дисков по расписаниям.`"]
+    compute_snapshotSchedules_editor("`compute.snapshotSchedules.editor`")
+      compute_snapshotSchedules_editor_desc["`Роль 'compute.snapshotSchedules.editor' позволяет создавать, изменять и удалять расписания создания снимков дисков, создавать и удалять снимки дисков, а также просматривать информацию об операциях со снимками дисков.`"]
+  Yandex Connection Manager
+    connection-manager_auditor("`connection-manager.auditor`")
+      connection-manager_auditor_desc["`Роль 'connection-manager.auditor' позволяет просматривать несекретную информацию о подключениях и назначенных правах доступа к ним. Если роль выдана на облако, то она позволяет просматривать квоты сервиса Connection Manager.`"]
+    connection-manager_viewer("`connection-manager.viewer`")
+      connection-manager_viewer_desc["`Роль 'connection-manager.viewer' позволяет просматривать информацию о подключениях и назначенных правах доступа к ним, а также о квотах сервиса Connection Manager.`"]
+    connection-manager_editor("`connection-manager.editor`")
+      connection-manager_editor_desc["`Роль 'connection-manager.editor' позволяет управлять подключениями, а также просматривать информацию о них.`"]
+    connection-manager_admin("`connection-manager.admin`")
+      connection-manager_admin_desc["`Роль 'connection-manager.admin' позволяет управлять подключениями и доступом к ним, а также просматривать информацию о подключениях.`"]
+  Yandex Container Registry
+    container-registry_viewer("`container-registry.viewer`")
+      container-registry_viewer_desc["`Роль 'container-registry.viewer' позволяет просматривать информацию о реестрах, Docker-образах и репозиториях, а также об облаке, каталоге и квотах сервиса.`"]
+    container-registry_editor("`container-registry.editor`")
+      container-registry_editor_desc["`Роль 'container-registry.editor' позволяет управлять реестрами, Docker-образами, репозиториями и их настройками.`"]
+    container-registry_admin("`container-registry.admin`")
+      container-registry_admin_desc["`Роль 'container-registry.admin' позволяет управлять доступом к реестрам и репозиториям, а также управлять реестрами, Docker-образами, репозиториями и их настройками.`"]
+    container-registry_images_pusher("`container-registry.images.pusher`")
+      container-registry_images_pusher_desc["`Роль 'container-registry.images.pusher' позволяет управлять Docker-образами и репозиториями, а также просматривать информацию о Docker-образах, репозиториях и реестрах.`"]
+    container-registry_images_puller("`container-registry.images.puller`")
+      container-registry_images_puller_desc["`Роль 'container-registry.images.puller' позволяет скачивать Docker-образы из реестра и просматривать список реестров и Docker-образов, а также информацию о них.`"]
+    container-registry_images_scanner("`container-registry.images.scanner`")
+      container-registry_images_scanner_desc["`Роль 'container-registry.images.scanner' позволяет сканировать Docker-образы на наличие уязвимостей, а также просматривать информацию о реестрах, Docker-образах и репозиториях, а также об облаке, каталоге и квотах сервиса.`"]
+  Yandex DataLens
+    datalens_workbooks_limitedViewer("`datalens.workbooks.limitedViewer`")
+      datalens_workbooks_limitedViewer_desc["`Роль 'datalens.workbooks.limitedViewer' назначается на воркбук и позволяет просматривать вложенные в него чарты и дашборды, а также информацию о назначенных правах доступа к нему. В интерфейсе DataLens эта роль называется 'Ограниченный просмотр'.`"]
+    datalens_workbooks_viewer("`datalens.workbooks.viewer`")
+      datalens_workbooks_viewer_desc["`Роль 'datalens.workbooks.viewer' назначается на воркбук и позволяет просматривать все вложенные в него объекты, а также информацию о назначенных правах доступа к нему. В интерфейсе DataLens эта роль называется 'Просмотр'.`"]
+    datalens_workbooks_editor("`datalens.workbooks.editor`")
+      datalens_workbooks_editor_desc["`Роль 'datalens.workbooks.editor' назначается на воркбук и позволяет редактировать его и все вложенные в него объекты. В интерфейсе DataLens эта роль называется 'Редактирование'.`"]
+    datalens_workbooks_admin("`datalens.workbooks.admin`")
+      datalens_workbooks_admin_desc["`Роль 'datalens.workbooks.admin' назначается на воркбук и позволяет управлять им, доступом к нему и всеми вложенными в него объектами. В интерфейсе DataLens эта роль называется 'Администрирование'.`"]
+    datalens_collections_limitedViewer("`datalens.collections.limitedViewer`")
+      datalens_collections_limitedViewer_desc["`Роль 'datalens.collections.limitedViewer' назначается на коллекцию и позволяет просматривать информацию о ней и вложенных в нее коллекциях и воркбуках, в том числе просматривать чарты и дашборды вложенных воркбуков. В интерфейсе DataLens эта роль называется 'Ограниченный просмотр'.`"]
+    datalens_collections_viewer("`datalens.collections.viewer`")
+      datalens_collections_viewer_desc["`Роль 'datalens.collections.viewer' назначается на коллекцию и позволяет просматривать информацию о ней и вложенных в нее коллекциях и воркбуках, а также просматривать все объекты вложенных воркбуков. В интерфейсе DataLens эта роль называется 'Просмотр'.`"]
+    datalens_collections_editor("`datalens.collections.editor`")
+      datalens_collections_editor_desc["`Роль 'datalens.collections.editor' назначается на коллекцию и позволяет редактировать ее и все вложенные в нее коллекции, воркбуки, а также все объекты в таких воркбуках. В интерфейсе DataLens эта роль называется 'Редактирование'.`"]
+    datalens_collections_admin("`datalens.collections.admin`")
+      datalens_collections_admin_desc["`Роль 'datalens.collections.admin' назначается на коллекцию и позволяет управлять ей, доступом к ней, а также всеми вложенными в нее коллекциями, воркбуками и объектами в таких воркбуках. В интерфейсе DataLens эта роль называется 'Администрирование'.`"]
+    datalens_visitor("`datalens.visitor`")
+      datalens_visitor_desc["`Роль 'datalens.visitor' предоставляет доступ к сервису DataLens. Просмотр или редактирование воркбуков и коллекций возможны при наличии соответствующих ролей для доступа к этим воркбукам и коллекциям.`"]
+    datalens_creator("`datalens.creator`")
+      datalens_creator_desc["`Роль 'datalens.creator' предоставляет доступ к сервису DataLens с правами на создание воркбуков и коллекций в корне DataLens. Просмотр или редактирование воркбуков и коллекций, созданных другими пользователями, возможны только при наличии прав доступа к этим воркбукам и коллекциям.`"]
+    datalens_admin("`datalens.admin`")
+      datalens_admin_desc["`Роль 'datalens.admin' предоставляет полный доступ к сервису DataLens и всем воркбукам и коллекциям в нем.`"]
+    datalens_instances_user("`datalens.instances.user`")
+      datalens_instances_user_desc["`Роль 'datalens.instances.user' предоставляет доступ к сервису DataLens в качестве пользователя с правами на создание, чтение и изменение объектов согласно правам доступа к ним, а также позволяет просматривать информацию о каталогах.`"]
+    datalens_instances_admin("`datalens.instances.admin`")
+      datalens_instances_admin_desc["`Роль 'datalens.instances.admin' предоставляет доступ к сервису DataLens в качестве администратора экземпляра DataLens. Администратор получает полные права на все объекты и папки в сервисе DataLens, доступ к настройкам DataLens, а также позволяет просматривать информацию о каталогах.`"]
+  Yandex Data Processing
+    dataproc_agent("`dataproc.agent`")
+      dataproc_agent_desc["`Роль 'dataproc.agent' позволяет сервисному аккаунту, привязанному к кластеру Yandex Data Proc, сообщать сервису о состоянии хостов кластера. Роль назначается сервисному аккаунту, привязанному к кластеру Yandex Data Proc.`"]
+    dataproc_auditor("`dataproc.auditor`")
+      dataproc_auditor_desc["`Роль 'dataproc.auditor' позволяет просматривать информацию о кластерах Yandex Data Proc.`"]
+    dataproc_viewer("`dataproc.viewer`")
+      dataproc_viewer_desc["`Роль 'dataproc.viewer' позволяет просматривать информацию о кластерах Yandex Data Proc и заданиях.`"]
+    dataproc_user("`dataproc.user`")
+      dataproc_user_desc["`Роль 'dataproc.user' предоставляет доступ к веб-интерфейсам компонентов Yandex Data Proc и позволяет создавать задания, а также позволяет просматривать информацию о кластерах управляемых баз данных Yandex Cloud.`"]
+    dataproc_provisioner("`dataproc.provisioner`")
+      dataproc_provisioner_desc["`Роль 'dataproc.provisioner' предоставляет доступ к API для создания, изменения и удаления объектов кластеров Yandex Data Proc.`"]
+    dataproc_editor("`dataproc.editor`")
+      dataproc_editor_desc["`Роль 'dataproc.editor' позволяет управлять кластерами Yandex Data Proc, запускать задания и просматривать информацию о них, а также предоставляет доступ к веб-интерфейсам компонентов сервиса.`"]
+    dataproc_admin("`dataproc.admin`")
+      dataproc_admin_desc["`Роль 'dataproc.admin' позволяет управлять кластерами Yandex Data Proc, запускать задания и просматривать информацию о них, а также предоставляет доступ к веб-интерфейсам компонентов сервиса.`"]
+    mdb_dataproc_agent("`mdb.dataproc.agent`")
+      mdb_dataproc_agent_desc["`Роль 'mdb.dataproc.agent' позволяет сервисному аккаунту, привязанному к кластеру Yandex Data Proc, сообщать сервису о состоянии хостов кластера.`"]
+    managed-metastore_auditor("`managed-metastore.auditor`")
+      managed-metastore_auditor_desc["`Роль 'managed-metastore.auditor' позволяет просматривать информацию о кластерах Hive Metastore и квотах сервисов управляемых баз данных Yandex Cloud.`"]
+    managed-metastore_viewer("`managed-metastore.viewer`")
+      managed-metastore_viewer_desc["`Роль 'managed-metastore.viewer' позволяет просматривать информацию о кластерах Hive Metastore и логи их работы, а также информацию о квотах сервисов управляемых баз данных Yandex Cloud.`"]
+    managed-metastore_editor("`managed-metastore.editor`")
+      managed-metastore_editor_desc["`Роль 'managed-metastore.editor' позволяет управлять кластерами Hive Metastore, а также просматривать логи их работы и информацию о квотах сервисов управляемых баз данных Yandex Cloud.`"]
+    managed-metastore_admin("`managed-metastore.admin`")
+      managed-metastore_admin_desc["`Роль 'managed-metastore.admin' позволяет управлять кластерами Hive Metastore, а также просматривать логи их работы и информацию о квотах сервисов управляемых баз данных Yandex Cloud.`"]
+    managed-metastore_integrationProvider("`managed-metastore.integrationProvider`")
+      managed-metastore_integrationProvider_desc["`Роль 'managed-metastore.integrationProvider' позволяет кластеру Hive Metastore взаимодействовать от имени сервисного аккаунта с пользовательскими ресурсами, необходимыми для работы кластера. Роль назначается сервисному аккаунту, привязанному к кластеру Hive Metastore.`"]
+  Yandex DataSphere
+    datasphere_community-projects_viewer("`datasphere.community-projects.viewer`")
+      datasphere_community-projects_viewer_desc["`Роль 'datasphere.community-projects.viewer' позволяет просматривать информацию о проектах, настройках проектов и закрепленных за ними ресурсах, а также о назначенных правах доступа к проектам.`"]
+    datasphere_community-projects_developer("`datasphere.community-projects.developer`")
+      datasphere_community-projects_developer_desc["`Роль 'datasphere.community-projects.developer' позволяет работать в проектах и управлять ресурсами, которые закреплены за проектами.`"]
+    datasphere_community-projects_editor("`datasphere.community-projects.editor`")
+      datasphere_community-projects_editor_desc["`Роль 'datasphere.community-projects.editor' позволяет работать в проектах, изменять и удалять их, а также управлять ресурсами, которые закреплены за проектами, и делиться такими ресурсами в сообществе.`"]
+    datasphere_community-projects_admin("`datasphere.community-projects.admin`")
+      datasphere_community-projects_admin_desc["`Роль 'datasphere.community-projects.admin' позволяет управлять доступом к проектам, работать в них, изменять и удалять проекты, а также управлять ресурсами, которые закреплены за проектами, и делиться такими ресурсами в сообществе.`"]
+    datasphere_communities_viewer("`datasphere.communities.viewer`")
+      datasphere_communities_viewer_desc["`Роль 'datasphere.communities.viewer' позволяет просматривать информацию о сообществах и проектах, а также о назначенных правах доступа к ним.`"]
+    datasphere_communities_developer("`datasphere.communities.developer`")
+      datasphere_communities_developer_desc["`Роль 'datasphere.communities.developer' позволяет создавать новые проекты и публиковать ресурсы проектов в сообществах, а также просматривать информацию о сообществах и проектах.`"]
+    datasphere_communities_editor("`datasphere.communities.editor`")
+      datasphere_communities_editor_desc["`Роль 'datasphere.communities.editor' позволяет привязывать платежный аккаунт к сообществам, удалять сообщества и редактировать их настройки, а также управлять проектами и ресурсами сообществ.`"]
+    datasphere_communities_admin("`datasphere.communities.admin`")
+      datasphere_communities_admin_desc["`Роль 'datasphere.communities.admin' позволяет управлять сообществами и проектами сообществ, а также доступом к ним.`"]
+    datasphere_user("`datasphere.user`")
+      datasphere_user_desc["`Роль 'datasphere.user' позволяет запускать в проектах исполнение ячеек с кодом, просматривать информацию о проектах и квотах сервиса DataSphere, а также об облаке и каталоге.`"]
+    data-sphere_user("`data-sphere.user`")
+      data-sphere_user_desc["`Роль 'data-sphere.user' устарела и больше не используется.`"]
+    datasphere_admin("`datasphere.admin`")
+      datasphere_admin_desc["`Роль 'datasphere.admin' позволяет управлять сообществами, проектами сообществ и доступом к ним, а также использовать облачные сети и ресурсы сервиса Virtual Private Cloud.`"]
+    data-sphere_admin("`data-sphere.admin`")
+      data-sphere_admin_desc["`Роль 'data-sphere.admin' устарела и больше не используется.`"]
+  Yandex Data Streams
+    yds_viewer("`yds.viewer`")
+      yds_viewer_desc["`Пользователь с ролью 'yds.viewer' может читать данные из потоков данных Data Streams и просматривать их настройки. Помимо этого роль 'yds.viewer' включает в себя все разрешения роли 'ydb.viewer'.`"]
+    yds_writer("`yds.writer`")
+      yds_writer_desc["`Роль 'yds.writer' разрешает запись в поток Data Streams.`"]
+    yds_editor("`yds.editor`")
+      yds_editor_desc["`Роль 'yds.editor' разрешает создание, изменение и удаление потока, а также чтение и запись в поток Data Streams.`"]
+    yds_admin("`yds.admin`")
+      yds_admin_desc["`Пользователь с ролью 'yds.admin' может управлять правами доступа к ресурсам, например разрешить другим пользователям создавать потоки данных Data Streams или просматривать информацию о них.`"]
+  Yandex Data Transfer
+    data-transfer_auditor("`data-transfer.auditor`")
+      data-transfer_auditor_desc["`Роль 'data-transfer.auditor' позволяет просматривать метаданные сервиса, в том числе информацию о каталоге, эндпоинтах и трансферах, а также о квотах сервиса Data Transfer.`"]
+    data-transfer_viewer("`data-transfer.viewer`")
+      data-transfer_viewer_desc["`Роль 'data-transfer.viewer' позволяет просматривать информацию о каталоге, эндпоинтах и трансферах, а также о квотах сервиса Data Transfer.`"]
+    data-transfer_privateAdmin("`data-transfer.privateAdmin`")
+      data-transfer_privateAdmin_desc["`Роль 'data-transfer.privateAdmin' позволяет управлять эндпоинтами и трансферами с передачей данных только в сетях Yandex Cloud, а также просматривать информацию о каталоге и квотах сервиса Data Transfer.`"]
+    data-transfer_admin("`data-transfer.admin`")
+      data-transfer_admin_desc["`Роль 'data-transfer.admin' позволяет управлять эндпоинтами и трансферами с передачей данных в сетях Yandex Cloud и через интернет, а также просматривать информацию о каталоге и квотах сервиса Data Transfer.`"]
+  Yandex Identity and Access Management
+    iam_serviceAccounts_user("`iam.serviceAccounts.user`")
+      iam_serviceAccounts_user_desc["`Роль 'iam.serviceAccounts.user' позволяет пользователю просматривать список сервисных аккаунтов и информацию о них, а также выполнять операции от имени сервисного аккаунта.`"]
+    iam_serviceAccounts_admin("`iam.serviceAccounts.admin`")
+      iam_serviceAccounts_admin_desc["`Роль 'iam.serviceAccounts.admin' позволяет управлять сервисными аккаунтами, доступом к ним и их ключами, а также позволяет пользователю получать IAM-токен для сервисного аккаунта.`"]
+    iam_serviceAccounts_accessKeyAdmin("`iam.serviceAccounts.accessKeyAdmin`")
+      iam_serviceAccounts_accessKeyAdmin_desc["`Роль 'iam.serviceAccounts.accessKeyAdmin' позволяет управлять статическими ключами доступа сервисных аккаунтов.`"]
+    iam_serviceAccounts_apiKeyAdmin("`iam.serviceAccounts.apiKeyAdmin`")
+      iam_serviceAccounts_apiKeyAdmin_desc["`Роль 'iam.serviceAccounts.apiKeyAdmin' позволяет управлять API-ключами сервисных аккаунтов.`"]
+    iam_serviceAccounts_authorizedKeyAdmin("`iam.serviceAccounts.authorizedKeyAdmin`")
+      iam_serviceAccounts_authorizedKeyAdmin_desc["`Роль 'iam.serviceAccounts.authorizedKeyAdmin' позволяет просматривать информацию об авторизованных ключах сервисных аккаунтов, а также создавать, изменять и удалять такие ключи.`"]
+    iam_serviceAccounts_keyAdmin("`iam.serviceAccounts.keyAdmin`")
+      iam_serviceAccounts_keyAdmin_desc["`Роль 'iam.serviceAccounts.keyAdmin' позволяет управлять статическими ключами доступа, API-ключами и авторизованными ключами сервисных аккаунтов.`"]
+    iam_serviceAccounts_tokenCreator("`iam.serviceAccounts.tokenCreator`")
+      iam_serviceAccounts_tokenCreator_desc["`Роль 'iam.serviceAccounts.tokenCreator' позволяет пользователю получать IAM-токен для сервисного аккаунта.`"]
+    iam_serviceAccounts_federatedCredentialViewer("`iam.serviceAccounts.federatedCredentialViewer`")
+      iam_serviceAccounts_federatedCredentialViewer_desc["`Роль 'iam.serviceAccounts.federatedCredentialViewer' позволяет просматривать список привязок в федерациях сервисных аккаунтов и информацию о таких привязках.`"]
+    iam_serviceAccounts_federatedCredentialEditor("`iam.serviceAccounts.federatedCredentialEditor`")
+      iam_serviceAccounts_federatedCredentialEditor_desc["`Роль 'iam.serviceAccounts.federatedCredentialEditor' позволяет просматривать список привязок в федерациях сервисных аккаунтов и информацию о таких привязках, а также создавать и удалять привязки.`"]
+    iam_workloadIdentityFederations_auditor("`iam.workloadIdentityFederations.auditor`")
+      iam_workloadIdentityFederations_auditor_desc["`Роль 'iam.workloadIdentityFederations.auditor' позволяет просматривать метаданные федераций сервисных аккаунтов.`"]
+    iam_workloadIdentityFederations_viewer("`iam.workloadIdentityFederations.viewer`")
+      iam_workloadIdentityFederations_viewer_desc["`Роль 'iam.workloadIdentityFederations.viewer' позволяет просматривать информацию о федерациях сервисных аккаунтов.`"]
+    iam_workloadIdentityFederations_user("`iam.workloadIdentityFederations.user`")
+      iam_workloadIdentityFederations_user_desc["`Роль 'iam.workloadIdentityFederations.user' позволяет использовать федерации сервисных аккаунтов.`"]
+    iam_workloadIdentityFederations_editor("`iam.workloadIdentityFederations.editor`")
+      iam_workloadIdentityFederations_editor_desc["`Роль 'iam.workloadIdentityFederations.editor' позволяет просматривать информацию о федерациях сервисных аккаунтов, а также создавать, изменять и удалять такие федерации.`"]
+    iam_workloadIdentityFederations_admin("`iam.workloadIdentityFederations.admin`")
+      iam_workloadIdentityFederations_admin_desc["`Роль 'iam.workloadIdentityFederations.admin' позволяет просматривать информацию о федерациях сервисных аккаунтов, а также создавать, изменять, использовать и удалять такие федерации.`"]
+    iam_auditor("`iam.auditor`")
+      iam_auditor_desc["`Роль 'iam.auditor' позволяет просматривать информацию о сервисных аккаунтах и их ключах, а также об операциях с ресурсами и квотах сервиса.`"]
+    iam_viewer("`iam.viewer`")
+      iam_viewer_desc["`Роль 'iam.viewer' позволяет просматривать информацию о сервисных аккаунтах и их ключах, а также об операциях с ресурсами и квотах сервиса.`"]
+    iam_editor("`iam.editor`")
+      iam_editor_desc["`Роль 'iam.editor' позволяет управлять сервисными аккаунтами и их ключами, управлять каталогами, а также просматривать информацию об операциях с ресурсами сервиса.`"]
+    iam_admin("`iam.admin`")
+      iam_admin_desc["`Роль 'iam.admin' позволяет управлять сервисными аккаунтами, доступом к ним и их ключами, управлять каталогами, просматривать информацию о квотах и операциях с ресурсами сервиса, а также позволяет пользователю получать IAM-токен для сервисного аккаунта.`"]
+  Yandex IoT Core
+    iot_devices_writer("`iot.devices.writer`")
+      iot_devices_writer_desc["`Роль 'iot.devices.writer' позволяет отправлять gRPC-сообщения в Yandex IoT Core от имени устройства.`"]
+    iot_registries_writer("`iot.registries.writer`")
+      iot_registries_writer_desc["`Роль 'iot.registries.writer' позволяет отправлять gRPC-сообщения в Yandex IoT Core от имени реестра.`"]
+    iot_auditor("`iot.auditor`")
+      iot_auditor_desc["`Роль 'iot.auditor' позволяет просматривать метаинформацию об устройствах и реестрах устройств, а также брокерах и квотах в Yandex IoT Core.`"]
+    iot_viewer("`iot.viewer`")
+      iot_viewer_desc["`Роль 'iot.viewer' позволяет просматривать все ресурсы Yandex IoT Core.`"]
+    iot_editor("`iot.editor`")
+      iot_editor_desc["`Роль 'iot.editor' позволяет создавать, редактировать и удалять все ресурсы Yandex IoT Core.`"]
+  Yandex Foundation Models
+    ai_languageModels_user("`ai.languageModels.user`")
+      ai_languageModels_user_desc["`Роль 'ai.languageModels.user' позволяет использовать языковые модели генерации YandexGPT API в сервисе Yandex Foundation Models, а также просматривать информацию об облаке, каталоге и квотах сервиса.`"]
+    ai_imageGeneration_user("`ai.imageGeneration.user`")
+      ai_imageGeneration_user_desc["`Роль 'ai.imageGeneration.user' позволяет использовать модели генерации изображений YandexART в сервисе Yandex Foundation Models, а также просматривать информацию об облаке, каталоге и квотах сервиса.`"]
+  Yandex Key Management Service
+    kms_keys_encrypter("`kms.keys.encrypter`")
+      kms_keys_encrypter_desc["`Роль 'kms.keys.encrypter' позволяет просматривать информацию о симметричных ключах шифрования и шифровать данные с помощью таких ключей.`"]
+    kms_keys_decrypter("`kms.keys.decrypter`")
+      kms_keys_decrypter_desc["`Роль 'kms.keys.decrypter' позволяет просматривать информацию о симметричных ключах шифрования и расшифровывать данные с помощью таких ключей.`"]
+    kms_keys_encrypterDecrypter("`kms.keys.encrypterDecrypter`")
+      kms_keys_encrypterDecrypter_desc["`Роль 'kms.keys.encrypterDecrypter' позволяет просматривать информацию о симметричных ключах шифрования, а также шифровать и расшифровывать данные с помощью таких ключей.`"]
+    kms_asymmetricEncryptionKeys_publicKeyViewer("`kms.asymmetricEncryptionKeys.publicKeyViewer`")
+      kms_asymmetricEncryptionKeys_publicKeyViewer_desc["`Роль 'kms.asymmetricEncryptionKeys.publicKeyViewer' позволяет просматривать информацию об асимметричных ключевых парах шифрования, а также получать открытый ключ ключевой пары шифрования.`"]
+    kms_asymmetricSignatureKeys_publicKeyViewer("`kms.asymmetricSignatureKeys.publicKeyViewer`")
+      kms_asymmetricSignatureKeys_publicKeyViewer_desc["`Роль 'kms.asymmetricSignatureKeys.publicKeyViewer' позволяет просматривать информацию о ключевых парах электронной подписи, а также получать открытый ключ ключевой пары электронной подписи.`"]
+    kms_asymmetricSignatureKeys_signer("`kms.asymmetricSignatureKeys.signer`")
+      kms_asymmetricSignatureKeys_signer_desc["`Роль 'kms.asymmetricSignatureKeys.signer' позволяет подписывать данные с помощью закрытого ключа ключевой пары электронной подписи.`"]
+    kms_asymmetricEncryptionKeys_decrypter("`kms.asymmetricEncryptionKeys.decrypter`")
+      kms_asymmetricEncryptionKeys_decrypter_desc["`Роль 'kms.asymmetricEncryptionKeys.decrypter' позволяет расшифровывать данные с помощью закрытого ключа асимметричной ключевой пары шифрования.`"]
+    kms_auditor("`kms.auditor`")
+      kms_auditor_desc["`Роль 'kms.auditor' позволяет просматривать информацию о ключах и ключевых парах шифрования и электронной подписи, а также о назначенных правах доступа к ним.`"]
+    kms_viewer("`kms.viewer`")
+      kms_viewer_desc["`Роль 'kms.viewer' позволяет просматривать информацию о ключах и ключевых парах шифрования и электронной подписи, о назначенных правах доступа к ним, а также о квотах сервиса.`"]
+    kms_editor("`kms.editor`")
+      kms_editor_desc["`Роль 'kms.editor' позволяет создавать ключи и ключевые пары шифрования и электронной подписи, а также использовать их для шифрования, расшифрования и подписи данных.`"]
+    kms_admin("`kms.admin`")
+      kms_admin_desc["`Роль 'kms.admin' позволяет управлять ключами и ключевыми парами шифрования и электронной подписи и доступом к ним, а также использовать их для шифрования, расшифрования и подписи данных.`"]
+  Yandex Load Testing
+    loadtesting_viewer("`loadtesting.viewer`")
+      loadtesting_viewer_desc["`Роль 'loadtesting.viewer' позволяет просматривать информацию о генераторах нагрузки и нагрузочных тестах, а также метаданные каталога.`"]
+    loadtesting_editor("`loadtesting.editor`")
+      loadtesting_editor_desc["`Роль 'loadtesting.editor' позволяет управлять агентами, нагрузочными тестами и их конфигурациями, хранилищами данных и дашбордами регрессий, а также регистрировать в сервисе агентов, созданных вне Load Testing.`"]
+    loadtesting_admin("`loadtesting.admin`")
+      loadtesting_admin_desc["`Роль 'loadtesting.admin' позволяет управлять агентами, нагрузочными тестами и их конфигурациями, хранилищами данных и дашбордами регрессий, а также регистрировать в сервисе агентов, созданных вне Load Testing.`"]
+    loadtesting_loadTester("`loadtesting.loadTester`")
+      loadtesting_loadTester_desc["`Роль 'loadtesting.loadTester' позволяет управлять агентами, нагрузочными тестами и их конфигурациями, хранилищами данных и дашбордами регрессий.`"]
+    loadtesting_generatorClient("`loadtesting.generatorClient`")
+      loadtesting_generatorClient_desc["`Роль 'loadtesting.generatorClient' позволяет создавать, изменять и выполнять нагрузочные тесты на агенте, а также дает возможность загружать результаты тестов в хранилище.`"]
+    loadtesting_externalAgent("`loadtesting.externalAgent`")
+      loadtesting_externalAgent_desc["`Роль 'loadtesting.externalAgent' позволяет регистрировать в сервисе агентов, созданных вне Load Testing, а также создавать, изменять и выполнять нагрузочные тесты на агенте.`"]
+  Yandex Lockbox
+    lockbox_auditor("`lockbox.auditor`")
+      lockbox_auditor_desc["`Роль 'lockbox.auditor' позволяет просматривать информацию о секретах и назначенных правах доступа к ним, а также информацию о квотах сервиса Yandex Lockbox и метаинформацию каталога.`"]
+    lockbox_viewer("`lockbox.viewer`")
+      lockbox_viewer_desc["`Роль 'lockbox.viewer' позволяет просматривать информацию о секретах и назначенных правах доступа к ним, а также информацию о каталоге и квотах сервиса Yandex Lockbox.`"]
+    lockbox_editor("`lockbox.editor`")
+      lockbox_editor_desc["`Роль 'lockbox.editor' позволяет управлять секретами и их версиями, а также просматривать информацию о назначенных правах доступа к секретам.`"]
+    lockbox_admin("`lockbox.admin`")
+      lockbox_admin_desc["`Роль 'lockbox.admin' позволяет управлять секретами, их версиями и доступом к ним, а также просматривать содержимое секретов.`"]
+    lockbox_payloadViewer("`lockbox.payloadViewer`")
+      lockbox_payloadViewer_desc["`Роль 'lockbox.payloadViewer' позволяет просматривать содержимое секретов.`"]
+  Управляемые базы данных
+    mdb_auditor("`mdb.auditor`")
+      mdb_auditor_desc["`Роль 'mdb.auditor' предоставляет минимально необходимые разрешения для просмотра информации о кластерах управляемых баз данных (без доступа к данным и логам работы).`"]
+    mdb_viewer("`mdb.viewer`")
+      mdb_viewer_desc["`Роль 'mdb.viewer' предоставляет доступ к чтению информации из кластеров управляемых баз данных и к логам работы кластеров.`"]
+    mdb_admin("`mdb.admin`")
+      mdb_admin_desc["`Роль 'mdb.admin' предоставляет полный доступ к кластерам управляемых баз данных.`"]
+  Yandex Managed Service for Apache Airflow™
+    managed-airflow_auditor("`managed-airflow.auditor`")
+      managed-airflow_auditor_desc["`Роль 'managed-airflow.auditor' позволяет просматривать информацию о кластерах Apache Airflow™.`"]
+    managed-airflow_viewer("`managed-airflow.viewer`")
+      managed-airflow_viewer_desc["`Роль 'managed-airflow.viewer' позволяет просматривать информацию о кластерах Apache Airflow™.`"]
+    managed-airflow_user("`managed-airflow.user`")
+      managed-airflow_user_desc["`Роль 'managed-airflow.user' позволяет выполнять базовые операции с кластерами Apache Airflow™.`"]
+    managed-airflow_editor("`managed-airflow.editor`")
+      managed-airflow_editor_desc["`Роль 'managed-airflow.editor' позволяет управлять кластерами Apache Airflow™, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+    managed-airflow_admin("`managed-airflow.admin`")
+      managed-airflow_admin_desc["`Роль 'managed-airflow.admin' позволяет управлять кластерами Apache Airflow™, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+    managed-airflow_integrationProvider("`managed-airflow.integrationProvider`")
+      managed-airflow_integrationProvider_desc["`Роль 'managed-airflow.integrationProvider' позволяет кластеру Apache Airflow™ взаимодействовать от имени сервисного аккаунта с пользовательскими ресурсами, необходимыми для работы кластера. Роль назначается сервисному аккаунту, привязанному к кластеру Apache Airflow™.`"]
+  Yandex Managed Service for Apache Kafka®
+    managed-kafka_auditor("`managed-kafka.auditor`")
+      managed-kafka_auditor_desc["`Роль 'managed-kafka.auditor' позволяет просматривать информацию о кластерах Apache Kafka®, а также о квотах и операциях с ресурсами сервиса Managed Service for Apache Kafka®.`"]
+    managed-kafka_viewer("`managed-kafka.viewer`")
+      managed-kafka_viewer_desc["`Роль 'managed-kafka.viewer' позволяет просматривать информацию о кластерах Apache Kafka® и логи их работы, а также данные о квотах и операциях с ресурсами сервиса Managed Service for Apache Kafka®.`"]
+    managed-kafka_editor("`managed-kafka.editor`")
+      managed-kafka_editor_desc["`Роль 'managed-kafka.editor' позволяет управлять кластерами Apache Kafka® и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+    managed-kafka_admin("`managed-kafka.admin`")
+      managed-kafka_admin_desc["`Роль 'managed-kafka.admin' позволяет управлять кластерами Apache Kafka® и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+  Yandex Managed Service for ClickHouse®
+    managed-clickhouse_auditor("`managed-clickhouse.auditor`")
+      managed-clickhouse_auditor_desc["`Роль 'managed-clickhouse.auditor' позволяет просматривать информацию о кластерах ClickHouse®, а также о квотах и операциях с ресурсами сервиса Managed Service for ClickHouse®.`"]
+    managed-clickhouse_viewer("`managed-clickhouse.viewer`")
+      managed-clickhouse_viewer_desc["`Роль 'managed-clickhouse.viewer' позволяет просматривать информацию о кластерах ClickHouse® и логи их работы, а также данные о квотах и операциях с ресурсами сервиса Managed Service for ClickHouse®.`"]
+    managed-clickhouse_editor("`managed-clickhouse.editor`")
+      managed-clickhouse_editor_desc["`Роль 'managed-clickhouse.editor' позволяет управлять кластерами ClickHouse® и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+    managed-clickhouse_admin("`managed-clickhouse.admin`")
+      managed-clickhouse_admin_desc["`Роль 'managed-clickhouse.admin' позволяет управлять кластерами ClickHouse® и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+  Yandex Managed Service for GitLab
+    gitlab_auditor("`gitlab.auditor`")
+      gitlab_auditor_desc["`Роль 'gitlab.auditor' позволяет просматривать информацию об инстансах Managed Service for GitLab и квотах сервиса.`"]
+    gitlab_viewer("`gitlab.viewer`")
+      gitlab_viewer_desc["`Роль 'gitlab.viewer' позволяет просматривать информацию об инстансах Managed Service for GitLab и квотах сервиса.`"]
+    gitlab_editor("`gitlab.editor`")
+      gitlab_editor_desc["`Роль 'gitlab.editor' позволяет управлять инстансами Managed Service for GitLab и переносить их в другую зону доступности.`"]
+    gitlab_admin("`gitlab.admin`")
+      gitlab_admin_desc["`Роль 'gitlab.admin' позволяет управлять инстансами Managed Service for GitLab и переносить их в другую зону доступности.`"]
+  Yandex Managed Service for Greenplum®
+    managed-greenplum_auditor("`managed-greenplum.auditor`")
+      managed-greenplum_auditor_desc["`Роль 'managed-greenplum.auditor' позволяет просматривать информацию о кластерах и хостах Greenplum®, а также о квотах и операциях с ресурсами сервиса Managed Service for Greenplum®.`"]
+    managed-greenplum_viewer("`managed-greenplum.viewer`")
+      managed-greenplum_viewer_desc["`Роль 'managed-greenplum.viewer' позволяет просматривать информацию о кластерах и хостах Greenplum®, логи их работы, а также данные о квотах и операциях с ресурсами сервиса.`"]
+    managed-greenplum_editor("`managed-greenplum.editor`")
+      managed-greenplum_editor_desc["`Роль 'managed-greenplum.editor' позволяет управлять кластерами Greenplum® и просматривать логи их работы, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+    managed-greenplum_admin("`managed-greenplum.admin`")
+      managed-greenplum_admin_desc["`Роль 'managed-greenplum.admin' позволяет управлять кластерами Greenplum® и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+  Yandex Managed Service for Kubernetes
+    k8s_viewer("`k8s.viewer`")
+      k8s_viewer_desc["`Роль 'k8s.viewer' позволяет просматривать информацию о кластерах и группах узлов Kubernetes.`"]
+    k8s_editor("`k8s.editor`")
+      k8s_editor_desc["`Роль 'k8s.editor' дает права на создание, удаление, изменение, остановку и запуск кластеров и групп узлов Kubernetes.`"]
+    k8s_admin("`k8s.admin`")
+      k8s_admin_desc["`Роль 'k8s.admin' дает права на создание, удаление, изменение, остановку и запуск кластеров и групп узлов Kubernetes.`"]
+    k8s_cluster-api_viewer("`k8s.cluster-api.viewer`")
+      k8s_cluster-api_viewer_desc["`Пользователь с ролью 'k8s.cluster-api.viewer' получает группу 'yc:view' и роль 'view' в Kubernetes RBAC для всех пространств имен в кластере.`"]
+    k8s_cluster-api_editor("`k8s.cluster-api.editor`")
+      k8s_cluster-api_editor_desc["`Пользователь с ролью 'k8s.cluster-api.editor' получает группу 'yc:edit' и роль 'edit' в Kubernetes RBAC для всех пространств имен в кластере.`"]
+    k8s_cluster-api_cluster-admin("`k8s.cluster-api.cluster-admin`")
+      k8s_cluster-api_cluster-admin_desc["`Пользователь с ролью 'k8s.cluster-api.cluster-admin' получает группу 'yc:cluster-admin' и роль 'cluster-admin' в Kubernetes RBAC.`"]
+    k8s_tunnelClusters_agent("`k8s.tunnelClusters.agent`")
+      k8s_tunnelClusters_agent_desc["`'k8s.tunnelClusters.agent' — специальная роль для создания кластера Kubernetes с туннельным режимом. Дает право на создание групп узлов, дисков, внутренних балансировщиков. Позволяет использовать заранее созданные ключи Yandex Key Management Service для шифрования и расшифровки секретов. Включает роли:`"]
+    k8s_clusters_agent("`k8s.clusters.agent`")
+      k8s_clusters_agent_desc["`'k8s.clusters.agent' — специальная роль для сервисного аккаунта кластера Kubernetes. Дает право на создание групп узлов, дисков, внутренних балансировщиков. Позволяет использовать заранее созданные ключи Yandex Key Management Service для шифрования и расшифровки секретов, а также подключать заранее созданные группы безопасности. В комбинации с ролью 'load-balancer.admin' позволяет создать сетевой балансировщик нагрузки с публичным IP-адресом. Включает роли:`"]
+  Yandex Managed Service for MongoDB
+    managed-mongodb_auditor("`managed-mongodb.auditor`")
+      managed-mongodb_auditor_desc["`Роль 'managed-mongodb.auditor' позволяет просматривать информацию о хостах и кластерах MongoDB, а также о квотах и операциях с ресурсами сервиса Managed Service for MongoDB.`"]
+    managed-mongodb_viewer("`managed-mongodb.viewer`")
+      managed-mongodb_viewer_desc["`Роль 'managed-mongodb.viewer' позволяет просматривать информацию о кластерах, хостах, шардах, базах данных и пользователях MongoDB, логи работы кластеров, а также данные о квотах и операциях с ресурсами сервиса.`"]
+    managed-mongodb_editor("`managed-mongodb.editor`")
+      managed-mongodb_editor_desc["`Роль 'managed-mongodb.editor' позволяет управлять кластерами MongoDB и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+    managed-mongodb_admin("`managed-mongodb.admin`")
+      managed-mongodb_admin_desc["`Роль 'managed-mongodb.admin' позволяет управлять кластерами MongoDB и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+  Yandex Managed Service for MySQL®
+    managed-mysql_auditor("`managed-mysql.auditor`")
+      managed-mysql_auditor_desc["`Роль 'managed-mysql.auditor' позволяет просматривать информацию о хостах и кластерах MySQL®, а также о квотах и операциях с ресурсами сервиса Managed Service for MySQL®.`"]
+    managed-mysql_viewer("`managed-mysql.viewer`")
+      managed-mysql_viewer_desc["`Роль 'managed-mysql.viewer' позволяет просматривать информацию о кластерах, хостах, базах данных и пользователях MySQL®, логи работы кластеров, а также данные о квотах и операциях с ресурсами сервиса.`"]
+    managed-mysql_editor("`managed-mysql.editor`")
+      managed-mysql_editor_desc["`Роль 'managed-mysql.editor' позволяет управлять кластерами MySQL® и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+    managed-mysql_admin("`managed-mysql.admin`")
+      managed-mysql_admin_desc["`Роль 'managed-mysql.admin' позволяет управлять кластерами MySQL® и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+  Yandex Managed Service for OpenSearch
+    managed-opensearch_auditor("`managed-opensearch.auditor`")
+      managed-opensearch_auditor_desc["`Роль 'managed-opensearch.auditor' позволяет просматривать информацию о кластерах OpenSearch, а также о квотах и операциях с ресурсами сервиса Managed Service for OpenSearch.`"]
+    managed-opensearch_viewer("`managed-opensearch.viewer`")
+      managed-opensearch_viewer_desc["`Роль 'managed-opensearch.viewer' позволяет просматривать информацию о кластерах OpenSearch и логи их работы, а также о квотах и операциях с ресурсами сервиса Managed Service for OpenSearch.`"]
+    managed-opensearch_editor("`managed-opensearch.editor`")
+      managed-opensearch_editor_desc["`Роль 'managed-opensearch.editor' позволяет управлять кластерами OpenSearch и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+    managed-opensearch_admin("`managed-opensearch.admin`")
+      managed-opensearch_admin_desc["`Роль 'managed-opensearch.admin' позволяет управлять кластерами OpenSearch и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+  Yandex Managed Service for PostgreSQL
+    managed-postgresql_auditor("`managed-postgresql.auditor`")
+      managed-postgresql_auditor_desc["`Роль 'managed-postgresql.auditor' позволяет просматривать информацию о хостах и кластерах PostgreSQL, а также о квотах и операциях с ресурсами сервиса Managed Service for PostgreSQL.`"]
+    managed-postgresql_viewer("`managed-postgresql.viewer`")
+      managed-postgresql_viewer_desc["`Роль 'managed-postgresql.viewer' позволяет просматривать информацию о кластерах, хостах, базах данных и пользователях PostgreSQL, логи работы кластеров, а также данные о квотах и операциях с ресурсами сервиса.`"]
+    managed-postgresql_editor("`managed-postgresql.editor`")
+      managed-postgresql_editor_desc["`Роль 'managed-postgresql.editor' позволяет управлять кластерами PostgreSQL и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+    managed-postgresql_admin("`managed-postgresql.admin`")
+      managed-postgresql_admin_desc["`Роль 'managed-postgresql.admin' позволяет управлять кластерами PostgreSQL и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+  Yandex Managed Service for Redis
+    managed-redis_auditor("`managed-redis.auditor`")
+      managed-redis_auditor_desc["`Роль 'managed-redis.auditor' позволяет просматривать информацию о хостах и кластерах Redis, а также о квотах и операциях с ресурсами сервиса Managed Service for Redis.`"]
+    managed-redis_viewer("`managed-redis.viewer`")
+      managed-redis_viewer_desc["`Роль 'managed-redis.viewer' позволяет просматривать информацию о хостах и кластерах Redis, логи их работы, а также данные о квотах и операциях с ресурсами сервиса.`"]
+    managed-redis_editor("`managed-redis.editor`")
+      managed-redis_editor_desc["`Роль 'managed-redis.editor' позволяет управлять кластерами Redis и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+    managed-redis_admin("`managed-redis.admin`")
+      managed-redis_admin_desc["`Роль 'managed-redis.admin' позволяет управлять кластерами Redis и просматривать их логи, а также получать информацию о квотах и операциях с ресурсами сервиса.`"]
+  Yandex Managed Service for SQL Server
+    managed-sqlserver_auditor("`managed-sqlserver.auditor`")
+      managed-sqlserver_auditor_desc["`Роль 'managed-sqlserver.auditor' позволяет просматривать информацию кластерах, хостах, пользователях, базах данных и резервных копиях БД SQL Server, а также о квотах и операциях с ресурсами сервиса Managed Service for SQL Server.`"]
+    managed-sqlserver_viewer("`managed-sqlserver.viewer`")
+      managed-sqlserver_viewer_desc["`Роль 'managed-sqlserver.viewer' позволяет просматривать логи кластеров SQL Server, а также информацию о кластерах, хостах, пользователях, базах данных и резервных копиях БД SQL Server.`"]
+    managed-sqlserver_editor("`managed-sqlserver.editor`")
+      managed-sqlserver_editor_desc["`Роль 'managed-sqlserver.editor' позволяет управлять кластерами, хостами, пользователями и базами данных SQL Server, а также создавать резервные копии БД и просматривать логи кластеров SQL Server.`"]
+    managed-sqlserver_admin("`managed-sqlserver.admin`")
+      managed-sqlserver_admin_desc["`Роль 'managed-sqlserver.admin' позволяет управлять кластерами, хостами, пользователями и базами данных SQL Server, а также создавать резервные копии БД и просматривать логи кластеров SQL Server.`"]
+  Yandex Managed Service for YDB
+    ydb_auditor("`ydb.auditor`")
+      ydb_auditor_desc["`Роль 'ydb.auditor' позволяет устанавливать соединения c базами данных, просматривать информацию о БД и назначенных правах доступа к ним, а также о схемных объектах и резервных копиях БД.`"]
+    ydb_viewer("`ydb.viewer`")
+      ydb_viewer_desc["`Роль 'ydb.viewer' позволяет устанавливать соединения c БД и выполнять запросы на чтение данных, просматривать информацию о БД и назначенных правах доступа к ним, а также о схемных объектах и резервных копиях БД.`"]
+    ydb_editor("`ydb.editor`")
+      ydb_editor_desc["`Роль 'ydb.editor' позволяет управлять базами данных, схемными объектами и резервными копиями БД, а также выполнять запросы к БД на чтение и запись данных.`"]
+    ydb_admin("`ydb.admin`")
+      ydb_admin_desc["`Роль 'ydb.admin' позволяет управлять базами данных и доступом к ним, управлять схемными объектами и резервными копиями БД, а также выполнять запросы к БД на чтение и запись данных.`"]
+    ydb_kafkaApi_client("`ydb.kafkaApi.client`")
+      ydb_kafkaApi_client_desc["`Роль 'ydb.kafkaApi.client' позволяет работать с 'ydb' по протоколу Kafka API с использованием plain-аутентификации через SSL-соединение.`"]
+  Yandex Message Queue
+    ymq_reader("`ymq.reader`")
+      ymq_reader_desc["`Роль 'ymq.reader' дает право читать и удалять сообщения, устанавливать таймауты видимости для сообщений, а также очищать очередь от сообщений. Позволяет получать список очередей и информацию о них.`"]
+    ymq_writer("`ymq.writer`")
+      ymq_writer_desc["`Роль 'ymq.writer' дает права на запись сообщений в очереди и создание новых очередей. Позволяет получать список очередей и информацию о них.`"]
+    ymq_admin("`ymq.admin`")
+      ymq_admin_desc["`Роль 'ymq.admin' включает права ролей 'ymq.reader' и 'ymq.writer', а также дает права изменять атрибуты очередей и удалять очереди. Позволяет получать список очередей и информацию о них.`"]
+  Yandex Monitoring
+    monitoring_viewer("`monitoring.viewer`")
+      monitoring_viewer_desc["`Роль 'monitoring.viewer' позволяет выгружать метрики, а также просматривать информацию о метриках, дашбордах и виджетах.`"]
+    monitoring_editor("`monitoring.editor`")
+      monitoring_editor_desc["`Роль 'monitoring.editor' позволяет управлять дашбордами и виджетами, загружать и выгружать метрики, а также просматривать историю уведомлений и информацию о квотах сервиса.`"]
+    monitoring_admin("`monitoring.admin`")
+      monitoring_admin_desc["`Роль 'monitoring.admin' позволяет управлять дашбордами и виджетами, загружать и выгружать метрики, а также просматривать историю уведомлений, информацию о квотах сервиса и метаданные каталога.`"]
+  Yandex Network Load Balancer
+    load-balancer_auditor("`load-balancer.auditor`")
+      load-balancer_auditor_desc["`Роль 'load-balancer.auditor' позволяет просматривать список целевых групп и сетевых балансировщиков, а также информацию о них и о квотах сервиса.`"]
+    load-balancer_viewer("`load-balancer.viewer`")
+      load-balancer_viewer_desc["`Роль 'load-balancer.viewer' позволяет просматривать список целевых групп и сетевых балансировщиков, информацию о них и список операций с ними, а также информацию о каталоге, облаке и квотах сервиса.`"]
+    load-balancer_privateAdmin("`load-balancer.privateAdmin`")
+      load-balancer_privateAdmin_desc["`Роль 'load-balancer.privateAdmin' позволяет управлять внутренними сетевыми балансировщиками нагрузки и целевыми группами, а также просматривать информацию о них и об облачных сетях, подсетях, таблицах маршрутизации, шлюзах, группах безопасности и IP-адресах.`"]
+    load-balancer_admin("`load-balancer.admin`")
+      load-balancer_admin_desc["`Роль 'load-balancer.admin' позволяет управлять внутренними и внешними сетевыми балансировщиками нагрузки и целевыми группами, а также просматривать информацию о них и об облачных сетях, подсетях, таблицах маршрутизации, шлюзах, группах безопасности и IP-адресах.`"]
+  Yandex Object Storage
+    storage_viewer("`storage.viewer`")
+      storage_viewer_desc["`Роль 'storage.viewer' дает доступ на чтение списка бакетов, их настроек и данных в бакетах.`"]
+    storage_configViewer("`storage.configViewer`")
+      storage_configViewer_desc["`Роль 'storage.configViewer' позволяет просматривать настройки безопасности бакетов и объектов в них, но не дает доступа к данным внутри бакета.`"]
+    storage_configurer("`storage.configurer`")
+      storage_configurer_desc["`Роль 'storage.configurer' позволяет управлять настройками жизненных циклов объектов, хостинга статических сайтов, политики доступа и CORS.`"]
+    storage_uploader("`storage.uploader`")
+      storage_uploader_desc["`Роль 'storage.uploader' позволяет загружать объекты в бакет, в том числе перезаписывать загруженные ранее. Также роль позволяет просматривать список объектов в бакете и скачивать их, поскольку роль 'storage.uploader' наследует права роли 'storage.viewer'.`"]
+    storage_editor("`storage.editor`")
+      storage_editor_desc["`Роль 'storage.editor' позволяет выполнять любые операции с бакетами и объектами в каталоге: создавать, удалять и изменять их, в том числе создать публично доступный бакет.`"]
+    storage_admin("`storage.admin`")
+      storage_admin_desc["`Роль 'storage.admin' предназначена для управления сервисом Object Storage.`"]
+  Yandex Query
+    yq_auditor("`yq.auditor`")
+      yq_auditor_desc["`Роль 'yq.auditor' позволяет просматривать метаданные сервиса, в том числе информацию о каталоге, соединениях, привязках и запросах.`"]
+    yq_viewer("`yq.viewer`")
+      yq_viewer_desc["`Пользователь с ролью 'yq.viewer' может просматривать запросы и результаты.`"]
+    yq_editor("`yq.editor`")
+      yq_editor_desc["`Пользователь с ролью 'yq.editor' может просматривать, редактировать, удалять созданные им соединения и запросы, а также запускать созданные им запросы. Роль 'yq.editor' включает в себя все разрешения роли 'yq.viewer'.`"]
+    yq_admin("`yq.admin`")
+      yq_admin_desc["`Роль 'yq.admin' разрешает управлять любыми ресурсами Query, в том числе помеченными как приватные. Роль 'yq.admin' включает в себя все разрешения роли 'yq.editor'.`"]
+    yq_invoker("`yq.invoker`")
+      yq_invoker_desc["`Пользователь с ролью 'yq.invoker' может запускать запросы в Query. Роль предназначена для автоматизации выполнения запросов сервисными аккаунтами. Например, для запуска запросов по событию или по расписанию.`"]
+  Yandex Resource Manager
+    resource-manager_auditor("`resource-manager.auditor`")
+      resource-manager_auditor_desc["`Роль 'resource-manager.auditor' позволяет просматривать метаинформацию облаков и каталогов, а также информацию о назначенных правах доступа к облакам и каталогам.`"]
+    resource-manager_viewer("`resource-manager.viewer`")
+      resource-manager_viewer_desc["`Роль 'resource-manager.viewer' позволяет просматривать информацию об облаках и каталогах, а также о назначенных правах доступа к облакам и каталогам.`"]
+    resource-manager_editor("`resource-manager.editor`")
+      resource-manager_editor_desc["`Роль 'resource-manager.editor' позволяет управлять облаками и каталогами, а также просматривать информацию о назначенных правах доступа к облакам и каталогам.`"]
+    resource-manager_admin("`resource-manager.admin`")
+      resource-manager_admin_desc["`Роль 'resource-manager.admin' позволяет управлять облаками и каталогами, а также доступом к ним.`"]
+    resource-manager_clouds_member("`resource-manager.clouds.member`")
+      resource-manager_clouds_member_desc["`Роль 'resource-manager.clouds.member' позволяет просматривать информацию об облаке и обращаться в техническую поддержку Yandex Cloud.`"]
+    resource-manager_clouds_owner("`resource-manager.clouds.owner`")
+      resource-manager_clouds_owner_desc["`Роль 'resource-manager.clouds.owner' позволяет совершать любые действия в облаке и дочерних ресурсах, а также просматривать список платежных аккаунтов и привязывать к ним облако. Роль должна быть выдана на платежный аккаунт. По умолчанию пользователи с этой ролью получают уведомления о событиях в облаке и его каталогах.`"]
+  Yandex Search API
+    search-api_executor("`search-api.executor`")
+      search-api_executor_desc["`Роль 'search-api.executor' позволяет использовать сервис Yandex Search API и выполнять поисковые запросы посредством API v1.`"]
+    search-api_webSearch_user("`search-api.webSearch.user`")
+      search-api_webSearch_user_desc["`Роль 'search-api.webSearch.user' позволяет выполнять поисковые запросы в сервисе Yandex Search API с использованием API v2, а также просматривать информацию об облаке, каталоге и квотах сервиса Yandex Search API.`"]
+    search-api_auditor("`search-api.auditor`")
+      search-api_auditor_desc["`Роль 'search-api.auditor' позволяет просматривать информацию о зарегистрированных IP-адресах и квотах сервиса Yandex Search API, а также об облаках и каталогах.`"]
+    search-api_viewer("`search-api.viewer`")
+      search-api_viewer_desc["`Роль 'search-api.viewer' позволяет просматривать информацию о зарегистрированных IP-адресах и квотах сервиса Yandex Search API, а также об облаках и каталогах.`"]
+    search-api_editor("`search-api.editor`")
+      search-api_editor_desc["`Роль 'search-api.editor' позволяет управлять зарегистрированными IP-адресами, а также выполнять поисковые запросы в сервисе Yandex Search API с использованием API v1 и API v2.`"]
+    search-api_admin("`search-api.admin`")
+      search-api_admin_desc["`Роль 'search-api.admin' позволяет управлять зарегистрированными IP-адресами, а также выполнять поисковые запросы в сервисе Yandex Search API с использованием API v1 и API v2.`"]
+  Yandex Security Deck
+    Сервисные роли для анализа данных Access Transparency
+      access-transparency_viewer("`access-transparency.viewer`")
+        access-transparency_viewer_desc["`Роль 'access-transparency.viewer' позволяет просматривать список событий доступа к ресурсам организации со стороны сотрудников Yandex Cloud, а также выражать согласие или несогласие с результатами подготовленного нейросетью анализа таких событий.`"]
+      access-transparency_editor("`access-transparency.editor`")
+        access-transparency_editor_desc["`Роль 'access-transparency.editor' позволяет создавать и удалять подписки организации на события доступа к ресурсам организации со стороны сотрудников Yandex Cloud, просматривать список таких событий, а также выражать согласие или несогласие с результатами подготовленного нейросетью анализа таких событий.`"]
+      access-transparency_admin("`access-transparency.admin`")
+        access-transparency_admin_desc["`Роль 'access-transparency.admin' позволяет создавать и удалять подписки организации на события доступа к ресурсам организации со стороны сотрудников Yandex Cloud, просматривать список таких событий, а также выражать согласие или несогласие с результатами подготовленного нейросетью анализа таких событий.`"]
+    Сервисные роли для контроля данных (DSPM)
+      dspm_inspector("`dspm.inspector`")
+        dspm_inspector_desc["`Роль 'dspm.inspector' позволяет создавать источники данных DSPM с использованием заданных ресурсов Yandex Cloud. Чтобы создать источник данных в DSPM, эту роль необходимо назначить пользователю на соответствующий облачный ресурс.`"]
+      dspm_auditor("`dspm.auditor`")
+        dspm_auditor_desc["`Роль 'dspm.auditor' позволяет просматривать информацию о ресурсах сервиса DSPM, а также о заданиях сканирования и количестве найденных угроз безопасности. Роль не позволяет просматривать замаскированные и необработанные данные.`"]
+      dspm_viewer("`dspm.viewer`")
+        dspm_viewer_desc["`Роль 'dspm.viewer' позволяет просматривать информацию о ресурсах сервиса DSPM, а также о заданиях сканирования и количестве найденных угроз безопасности. Роль не позволяет просматривать замаскированные и необработанные данные.`"]
+      dspm_editor("`dspm.editor`")
+        dspm_editor_desc["`Роль 'dspm.editor' позволяет использовать профили DSPM, управлять источниками данных и сканированием на угрозы безопасности. Роль не позволяет просматривать замаскированные и необработанные данные.`"]
+      dspm_admin("`dspm.admin`")
+        dspm_admin_desc["`Роль 'dspm.admin' позволяет использовать профили DSPM, управлять источниками данных и сканированием на угрозы безопасности, в том числе просматривать замаскированные и необработанные данные в результатах сканирования.`"]
+  Yandex Serverless Containers
+    serverless-containers_auditor("`serverless-containers.auditor`")
+      serverless-containers_auditor_desc["`Роль 'serverless-containers.auditor' позволяет просматривать информацию о контейнерах, кроме информации о переменных окружения ревизии.`"]
+    serverless-containers_viewer("`serverless-containers.viewer`")
+      serverless-containers_viewer_desc["`Роль 'serverless-containers.viewer' позволяет просматривать информацию о контейнерах, а также об облаке и каталоге.`"]
+    serverless-containers_editor("`serverless-containers.editor`")
+      serverless-containers_editor_desc["`Роль 'serverless-containers.editor' позволяет управлять контейнерами и просматривать информацию о них, а также об облаке и каталоге.`"]
+    serverless-containers_admin("`serverless-containers.admin`")
+      serverless-containers_admin_desc["`Роль 'serverless-containers.admin' позволяет управлять контейнерами и доступом к ним, а также просматривать информацию о контейнерах, облаке и каталоге.`"]
+    serverless-containers_containerInvoker("`serverless-containers.containerInvoker`")
+      serverless-containers_containerInvoker_desc["`Роль 'serverless-containers.containerInvoker' позволяет вызывать контейнеры.`"]
+    serverless_containers_viewer("`serverless.containers.viewer`")
+      serverless_containers_viewer_desc["`Роль 'serverless.containers.viewer' позволяет просматривать информацию о контейнерах, а также об облаке и каталоге.`"]
+    serverless_containers_editor("`serverless.containers.editor`")
+      serverless_containers_editor_desc["`Роль 'serverless.containers.editor' позволяет управлять контейнерами и просматривать информацию о них, а также об облаке и каталоге.`"]
+    serverless_containers_admin("`serverless.containers.admin`")
+      serverless_containers_admin_desc["`Роль 'serverless.containers.admin' позволяет управлять контейнерами и доступом к ним, а также просматривать информацию о контейнерах, облаке и каталоге.`"]
+    serverless_containers_invoker("`serverless.containers.invoker`")
+      serverless_containers_invoker_desc["`Роль 'serverless.containers.invoker' позволяет вызывать контейнеры.`"]
+  Yandex SmartCaptcha
+    smart-captcha_auditor("`smart-captcha.auditor`")
+      smart-captcha_auditor_desc["`Роль 'smart-captcha.auditor' позволяет просматривать информацию о капчах и назначенных правах доступа к ним.`"]
+    smart-captcha_viewer("`smart-captcha.viewer`")
+      smart-captcha_viewer_desc["`Роль 'smart-captcha.viewer' позволяет просматривать информацию о капчах и назначенных правах доступа к ним, а также получать ключи капчи.`"]
+    smart-captcha_editor("`smart-captcha.editor`")
+      smart-captcha_editor_desc["`Роль 'smart-captcha.editor' позволяет управлять капчами, просматривать информацию о них и получать ключи капчи.`"]
+    smart-captcha_admin("`smart-captcha.admin`")
+      smart-captcha_admin_desc["`Роль 'smart-captcha.admin' позволяет управлять капчами и доступом к ним, а также получать ключи капчи.`"]
+  Yandex Smart Web Security
+    smart-web-security_auditor("`smart-web-security.auditor`")
+      smart-web-security_auditor_desc["`Роль 'smart-web-security.auditor' позволяет просматривать информацию о профилях безопасности Smart Web Security и метаинформацию облака и каталога.`"]
+    smart-web-security_viewer("`smart-web-security.viewer`")
+      smart-web-security_viewer_desc["`Роль 'smart-web-security.viewer' позволяет просматривать информацию о профилях безопасности Smart Web Security, а также об облаке и каталоге.`"]
+    smart-web-security_user("`smart-web-security.user`")
+      smart-web-security_user_desc["`Роль 'smart-web-security.user' позволяет просматривать информацию о профилях безопасности Smart Web Security и использовать их.`"]
+    smart-web-security_editor("`smart-web-security.editor`")
+      smart-web-security_editor_desc["`Роль 'smart-web-security.editor' позволяет использовать профили безопасности Smart Web Security и управлять ими.`"]
+    smart-web-security_admin("`smart-web-security.admin`")
+      smart-web-security_admin_desc["`Роль 'smart-web-security.admin' позволяет использовать профили безопасности Smart Web Security, управлять ими и доступом к ним.`"]
+  Yandex SpeechKit
+    ai_speechkit-stt_user("`ai.speechkit-stt.user`")
+      ai_speechkit-stt_user_desc["`Роль 'ai.speechkit-stt.user' позволяет использовать сервис Yandex SpeechKit для распознавания речи, а также просматривать информацию об облаке, каталоге и квотах сервиса.`"]
+    ai_speechkit-tts_user("`ai.speechkit-tts.user`")
+      ai_speechkit-tts_user_desc["`Роль 'ai.speechkit-tts.user' позволяет использовать сервис Yandex SpeechKit для синтеза речи, а также просматривать информацию об облаке, каталоге и квотах сервиса.`"]
+  Yandex SpeechSense
+    speech-sense_auditor("`speech-sense.auditor`")
+      speech-sense_auditor_desc["`Роль 'speech-sense.auditor' позволяет просматривать название, описание и список участников проекта или пространства и всех его проектов. Роль не дает доступа к данным проекта.`"]
+    speech-sense_viewer("`speech-sense.viewer`")
+      speech-sense_viewer_desc["`Роль 'speech-sense.viewer' позволяет просматривать характеристики проекта или пространства, список участников, список подключений и дашборды.`"]
+    speech-sense_editor("`speech-sense.editor`")
+      speech-sense_editor_desc["`Роль 'speech-sense.editor' позволяет редактировать проект, его описание, дашборды и алерты, создавать и редактировать его классификаторы и запускать анализ. Назначенная на пространство роль позволяет редактировать пространство и создавать в нем проекты, подключения и словари.`"]
+    speech-sense_admin("`speech-sense.admin`")
+      speech-sense_admin_desc["`Роль 'speech-sense.admin', назначенная на пространство или проект, позволяет выполнять любые действия в нем: просматривать диалоги, редактировать подключения, запускать анализ. Роль дает право назначать роли другим пользователям.`"]
+    speech-sense_spaces_creator("`speech-sense.spaces.creator`")
+      speech-sense_spaces_creator_desc["`Роль 'speech-sense.spaces.creator' позволяет создавать пространства в SpeechSense.`"]
+    speech-sense_data_viewer("`speech-sense.data.viewer`")
+      speech-sense_data_viewer_desc["`Роль 'speech-sense.data.viewer' позволяет просматривать название и описание проекта, список подключений и дашборды, список участников проекта, а также дает возможность искать по документам, прослушивать диалоги и просматривать текстовые расшифровки. При назначении роли на пространство дает возможность просматривать все проекты этого пространства, но не дает права редактировать их.`"]
+    speech-sense_data_editor("`speech-sense.data.editor`")
+      speech-sense_data_editor_desc["`Роль 'speech-sense.data.editor' позволяет загружать диалоги в подключения проекта или пространства, оценивать диалоги и писать комментарии к ним в системе.`"]
+  Yandex Translate
+    ai_translate_user("`ai.translate.user`")
+      ai_translate_user_desc["`Роль 'ai.translate.user' позволяет использовать сервис Yandex Translate для перевода текста, а также просматривать информацию об облаке, каталоге и квотах сервиса.`"]
+  Yandex Virtual Private Cloud
+    vpc_auditor("`vpc.auditor`")
+      vpc_auditor_desc["`Роль 'vpc.auditor' позволяет просматривать метаданные сервиса, в том числе информацию об облачных сетях, подсетях, таблицах маршрутизации, шлюзах, группах безопасности и IP-адресах, а также о квотах и операциях с ресурсами сервиса.`"]
+    vpc_viewer("`vpc.viewer`")
+      vpc_viewer_desc["`Роль 'vpc.viewer' позволяет просматривать информацию об облачных сетях, подсетях, таблицах маршрутизации, шлюзах, группах безопасности и IP-адресах, а также о квотах и операциях с ресурсами сервиса.`"]
+    vpc_user("`vpc.user`")
+      vpc_user_desc["`Роль 'vpc.user' позволяет использовать облачные сети, подсети, таблицы маршрутизации, шлюзы, группы безопасности и IP-адреса, получать информацию об этих ресурсах, а также о квотах и операциях с ресурсами сервиса.`"]
+    vpc_externalAddresses_user("`vpc.externalAddresses.user`")
+      vpc_externalAddresses_user_desc["`Роль 'vpc.externalAddresses.user' позволяет просматривать список внутренних и публичных адресов облачных ресурсов и информацию об этих адресах, использовать их, а также управлять внешней сетевой связностью.`"]
+    vpc_admin("`vpc.admin`")
+      vpc_admin_desc["`Роль 'vpc.admin' позволяет управлять облачными сетями, подсетями, таблицами маршрутизации, NAT-шлюзами, группами безопасности, внутренними и публичными IP-адресами, а также внешней сетевой связностью.`"]
+    vpc_bridgeAdmin("`vpc.bridgeAdmin`")
+      vpc_bridgeAdmin_desc["`Роль 'vpc.bridgeAdmin' позволяет использовать подсети и управлять связностью нескольких облачных сетей. Роль также позволяет просматривать информацию об облачных сетях, подсетях, таблицах маршрутизации, шлюзах, группах безопасности и IP-адресах, а также о квотах и операциях с ресурсами сервиса.`"]
+    vpc_privateAdmin("`vpc.privateAdmin`")
+      vpc_privateAdmin_desc["`Роль 'vpc.privateAdmin' позволяет управлять облачными сетями, подсетями и таблицами маршрутизации, а также просматривать информацию о квотах, ресурсах и операциях с ресурсами сервиса. Роль позволяет управлять сетевой связностью внутри Yandex Cloud, но не из интернета.`"]
+    vpc_publicAdmin("`vpc.publicAdmin`")
+      vpc_publicAdmin_desc["`Роль 'vpc.publicAdmin' позволяет управлять NAT-шлюзами, публичными IP-адресами и внешней сетевой связностью, а также просматривать информацию о квотах, ресурсах и операциях с ресурсами сервиса. Роль предоставляет права администратора мультиинтерфейсных ВМ, обеспечивающих связность между несколькими сетями.`"]
+    vpc_gateways_viewer("`vpc.gateways.viewer`")
+      vpc_gateways_viewer_desc["`Роль 'vpc.gateways.viewer' позволяет просматривать информацию о NAT-шлюзах.`"]
+    vpc_gateways_user("`vpc.gateways.user`")
+      vpc_gateways_user_desc["`Роль 'vpc.gateways.user' позволяет просматривать информацию о NAT-шлюзах и подключать их к таблицам маршрутизации.`"]
+    vpc_gateways_editor("`vpc.gateways.editor`")
+      vpc_gateways_editor_desc["`Роль 'vpc.gateways.editor' позволяет создавать, изменять и удалять NAT-шлюзы, а также подключать их к таблицам маршрутизации.`"]
+    vpc_securityGroups_user("`vpc.securityGroups.user`")
+      vpc_securityGroups_user_desc["`Роль 'vpc.securityGroups.user' позволяет назначать группы безопасности сетевым интерфейсам и просматривать информацию о ресурсах сервиса, а также о квотах и операциях с ресурсами сервиса.`"]
+    vpc_securityGroups_admin("`vpc.securityGroups.admin`")
+      vpc_securityGroups_admin_desc["`Роль 'vpc.securityGroups.admin' позволяет управлять группами безопасности и просматривать информацию о ресурсах сервиса, а также о квотах и операциях с ресурсами сервиса.`"]
+  Yandex Vision OCR
+    ai_vision_user("`ai.vision.user`")
+      ai_vision_user_desc["`Роль 'ai.vision.user' позволяет использовать сервис Yandex Vision OCR для анализа изображений, а также просматривать информацию об облаке, каталоге и квотах сервиса.`"]
+  Yandex WebSQL
+    websql_executedQueries_auditor("`websql.executedQueries.auditor`")
+      websql_executedQueries_auditor_desc["`Роль 'websql.executedQueries.auditor' позволяет просматривать метаданные опубликованного запроса из истории и информацию о назначенных правах доступа к нему.`"]
+    websql_savedQueries_auditor("`websql.savedQueries.auditor`")
+      websql_savedQueries_auditor_desc["`Роль 'websql.savedQueries.auditor' позволяет просматривать метаданные опубликованного сохраненного запроса и информацию о назначенных правах доступа к нему.`"]
+    websql_executedQueries_viewer("`websql.executedQueries.viewer`")
+      websql_executedQueries_viewer_desc["`Роль 'websql.executedQueries.viewer' позволяет просматривать информацию об опубликованном запросе из истории и назначенных правах доступа к нему.`"]
+    websql_savedQueries_viewer("`websql.savedQueries.viewer`")
+      websql_savedQueries_viewer_desc["`Роль 'websql.savedQueries.viewer' позволяет просматривать информацию об опубликованном сохраненном запросе и назначенных правах доступа к нему.`"]
+    websql_executedQueries_editor("`websql.executedQueries.editor`")
+      websql_executedQueries_editor_desc["`Роль 'websql.executedQueries.editor' позволяет просматривать информацию об опубликованном запросе из истории и удалять его.`"]
+    websql_savedQueries_editor("`websql.savedQueries.editor`")
+      websql_savedQueries_editor_desc["`Роль 'websql.savedQueries.editor' позволяет изменять и удалять опубликованный сохраненный запрос.`"]
+    websql_executedQueries_admin("`websql.executedQueries.admin`")
+      websql_executedQueries_admin_desc["`Роль 'websql.executedQueries.admin' позволяет управлять опубликованным запросом из истории и доступом к нему.`"]
+    websql_savedQueries_admin("`websql.savedQueries.admin`")
+      websql_savedQueries_admin_desc["`Роль 'websql.savedQueries.admin' позволяет управлять опубликованным сохраненным запросом и доступом к нему.`"]
+    websql_auditor("`websql.auditor`")
+      websql_auditor_desc["`Роль 'websql.auditor' позволяет просматривать метаданные всех опубликованных запросов в сервисе WebSQL и информацию о назначенных правах доступа к ним.`"]
+    websql_viewer("`websql.viewer`")
+      websql_viewer_desc["`Роль 'websql.viewer' позволяет просматривать информацию обо всех опубликованных запросах в сервисе WebSQL и назначенных правах доступа к ним.`"]
+    websql_user("`websql.user`")
+      websql_user_desc["`Роль 'websql.user' позволяет просматривать информацию об опубликованных запросах в сервисе WebSQL, а также создавать, изменять и удалять приватные запросы.`"]
+    websql_editor("`websql.editor`")
+      websql_editor_desc["`Роль 'websql.editor' позволяет управлять опубликованными и приватными запросами в сервисе WebSQL.`"]
+    websql_admin("`websql.admin`")
+      websql_admin_desc["`Роль 'websql.admin' позволяет управлять приватными запросами и публиковать их, а также управлять опубликованными запросами и доступом к ним.`"]
+  Yandex Wiki
+    wiki_viewer("`wiki.viewer`")
+      wiki_viewer_desc["`Роль 'wiki.viewer' назначается на организацию.`"]
+    wiki_admin("`wiki.admin`")
+      wiki_admin_desc["`_ClickHouse® является зарегистрированным товарным знаком ClickHouse, Inc._`"]
